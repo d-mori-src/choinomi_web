@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    overflow-x: hidden;
+    background: #F0F2E7;
+}
+p { 
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+a {
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    transition: .5s;
+    &:hover {
+        opacity: .5;
+    }
+}
+ul li {
+    list-style: none;
+}
+img {
+	vertical-align: top;
+}
+.sp { display: block; }
+.pc { display: none; }
+@media screen and (min-width:768px) {
+    .sp { display: none; }
+    .pc { display: block; }
+}

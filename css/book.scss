@@ -1,0 +1,9 @@
+.book {
+    margin: 80px 0 0 0;
+    @media screen and (min-width:768px) {
+
+    }
+    @media screen and (min-width:1024px) {
+        margin: 120px 0 0 0;
+    }
+}

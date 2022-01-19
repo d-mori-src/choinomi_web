@@ -1,0 +1,102 @@
+footer {
+    background: #000;
+    .trademark {
+        width: 100%;
+        margin: 80px auto 0;
+        padding: 10px 0;
+        border-top: 1px solid #000;
+        background: #F0F2E7;
+        p {
+            text-align: center;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+    .innerFooter {
+        text-align: center;
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        padding: 32px 0;
+        a {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            transition: .5s;
+            &:hover {
+                color: #EB6100;
+                opacity: 1;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                margin: 0 16px 16px;
+            }
+        }
+        .issue {
+            font-size: 11px;
+            margin: 0 0 16px 0;
+        }
+        p {
+            text-align: center;
+            font-size: 10px;
+            line-height: 1.7;
+            color: #ccc;
+            .phone {
+                font-size: 10px;
+                font-weight: 300;
+                color: #ccc;
+                margin: 0 0 16px 0;
+            }
+            span {
+                font-size: 14px;
+                margin: 0 4px 0 0;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .trademark {
+            margin: 120px auto 0;
+            p {
+                   font-size: 14px;
+            }
+        }
+        .innerFooter {
+            width: 810px;
+            padding: 40px 0;
+            a {
+                font-size: 16px;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                li {
+                    margin: 0 24px 30px;
+                }
+            }
+            .issue {
+                font-size: 16px;
+                margin: 0 0 48px 0;
+            }
+            p {
+                font-size: 13px;
+                .phone {
+                    font-size: 13px;
+                    margin: 0 0 20px 0;
+                }
+                span {
+                    font-size: 18px;
+                }
+                .copyright {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

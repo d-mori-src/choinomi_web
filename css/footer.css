@@ -1,0 +1,126 @@
+footer {
+  background: #000;
+}
+
+footer .trademark {
+  width: 100%;
+  margin: 80px auto 0;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  background: #F0F2E7;
+}
+
+footer .trademark p {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+footer .innerFooter {
+  text-align: center;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+footer .innerFooter a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer .innerFooter a:hover {
+  color: #EB6100;
+  opacity: 1;
+}
+
+footer .innerFooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .innerFooter ul li {
+  margin: 0 16px 16px;
+}
+
+footer .innerFooter .issue {
+  font-size: 11px;
+  margin: 0 0 16px 0;
+}
+
+footer .innerFooter p {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+footer .innerFooter p .phone {
+  font-size: 10px;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0 0 16px 0;
+}
+
+footer .innerFooter p span {
+  font-size: 14px;
+  margin: 0 4px 0 0;
+  position: relative;
+  top: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .trademark {
+    margin: 120px auto 0;
+  }
+  footer .trademark p {
+    font-size: 14px;
+  }
+  footer .innerFooter {
+    width: 810px;
+    padding: 40px 0;
+  }
+  footer .innerFooter a {
+    font-size: 16px;
+  }
+  footer .innerFooter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .innerFooter ul li {
+    margin: 0 24px 30px;
+  }
+  footer .innerFooter .issue {
+    font-size: 16px;
+    margin: 0 0 48px 0;
+  }
+  footer .innerFooter p {
+    font-size: 13px;
+  }
+  footer .innerFooter p .phone {
+    font-size: 13px;
+    margin: 0 0 20px 0;
+  }
+  footer .innerFooter p span {
+    font-size: 18px;
+  }
+  footer .innerFooter p .copyright {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

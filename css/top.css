@@ -1,0 +1,73 @@
+.top {
+  margin: 80px 0 0 0;
+}
+
+.top .hero {
+  margin: 0 0 40px 0;
+}
+
+.top .hero .title {
+  width: calc(100% - 80px);
+  margin: 0 auto 32px;
+}
+
+.top .hero .title .titleImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 12px 0;
+}
+
+.top .hero .title .year {
+  text-align: right;
+  font-size: 10px;
+}
+
+.top .hero .main {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+}
+
+.top .hero .main .mainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.top .about {
+  width: calc(100% - 80px);
+  margin: 0 auto 40px;
+}
+
+.top .about .leftAbout h2 {
+  margin: 0 0 24px 0;
+}
+
+.top .about .leftAbout h2 .h2Logo {
+  width: 240px;
+  height: auto;
+}
+
+.top .about .leftAbout .sp_aboutImage {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0 auto 24px;
+}
+
+.top .about .leftAbout p {
+  text-align: justify;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.top .about .rightAbout {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .top {
+    margin: 120px 0 0 0;
+  }
+}
+/*# sourceMappingURL=top.css.map */

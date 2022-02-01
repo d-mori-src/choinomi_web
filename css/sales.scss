@@ -1,0 +1,263 @@
+.sales {
+    margin: 70px auto;
+    width: calc(100% - 80px);
+    .detail {
+        margin: 48px 0 0 0;
+        .cover {
+            width: 56%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            .coverImage {
+                width: 100%;
+                height: auto;
+                filter: drop-shadow(0 0 10px rgba(0,0,0,0.1));
+            }
+            .infoIcon {
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                right: -64px;
+                bottom: -64px;
+            }
+        }
+        .medium {
+            margin: 80px 0 0 0;
+            .bookInfo {
+                margin: 0 0 20px 0;
+                padding: 32px 20px;
+                border-radius: 4px;
+                background: #EAE7D6;
+                box-shadow: inset 0 0 20px rgba(177,173,153,0.3);
+                .name {
+                    margin: 0 0 12px 0;
+                    .logo {
+                        width: 104px;
+                        height: auto;
+                    }
+                    span {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+                .available {
+                    margin: 0 0 12px 0;
+                    h3 {
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #fff;
+                        margin: 0 0 8px 0;
+                        padding: 6px 6px 4px;
+                        background: #B9222A;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: #B9222A;
+                    }
+                }
+                .info {
+                    margin: 0 0 12px 0;
+                    dl {
+                        display: flex;
+                        font-size: 12px;
+                        line-height: 2;
+                        dt {
+                            font-weight: bold;
+                            width: 90px;
+                            margin: 0 16px 0 0;
+                        }
+                    }
+                }
+                .btnWrap {
+                    display: flex;
+                    justify-content: space-between;
+                    .btn {
+                        width: 32%;
+                        padding: 14px 10px 5px;
+                        border-radius: 2px;
+                        background: #485990;
+                        position: relative;
+                        .btnText {
+                            width: auto;
+                            height: 9px;
+                        }
+                        .btnArrow {
+                            width: 5px;
+                            height: auto;
+                            position: absolute;
+                            top: 0;
+                            right: 5px;
+                            bottom: 0;
+                            margin: auto;
+                        }
+                    }
+                    .orange {
+                        background: #D97F3F;
+                    }
+                }
+            }
+            .questionnaireBanner {
+                display: block;
+                margin: 0 0 40px 0;
+                .bannerImage {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .lead {
+                margin: 0 0 40px 0;
+                h3 {
+                    margin: 0 0 20px 0;
+                    .eyecatchImage {
+                        width: auto;
+                        height: 17px;
+                    }
+                }
+                p {
+                    text-align: justify;
+                    font-size: 12px;
+                    line-height: 1.6;
+                }
+            }
+            .sns {
+                margin: 0 0 40px 0;
+                h3 {
+                    font-size: 13px;
+                    margin: 0 0 20px 0;
+                }
+                .snsItems {
+                    display: flex;
+                    .snsItem {
+                        display: block;
+                        text-align: center;
+                        width: 24%;
+                        margin: 0 1% 0 0;
+                        padding: 18px 0;
+                        border: 1px solid #000;
+                        border-radius: 8px;
+                        img {
+                            display: block;
+                            width: auto;
+                            height: 16px;
+                            margin: 0 auto 8px;
+                        }
+                        span {
+                            display: block;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .contest {
+                margin: 0 0 40px 0;
+                .contestImage {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 0 20px 0;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 12px;
+                    line-height: 1.6;
+                }
+            }
+            .questionnaire {
+                h2 {
+                    text-align: center;
+                    margin: 0 0 20px 0;
+                    .secTitleImage {
+                        width: auto;
+                        height: 48px;
+                    }
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    color: #B9222A;
+                    margin: 0 0 20px 0;
+                    padding: 8px 8px 10px;
+                    border: 1px solid #B9222A;
+                }
+                strong {
+                    display: block;
+                    text-align: justify;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0 0 20px 0;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 12px;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                }
+                .linkBtn {
+                    text-align: center;
+                    display: block;
+                    font-size: 11px;
+                    width: 216px;
+                    margin: 0 auto;
+                    padding: 18px;
+                    border: 1px solid #000;
+                    position: relative;
+                    img {
+                        width: 6px;
+                        height: auto;
+                        position: absolute;
+                        top: 0;
+                        right: 24px;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 0 0;
+            .cover {
+                width: 24%;
+                height: auto;
+                margin: 0;
+                position: -webkit-sticky;
+                position: sticky;
+                height: 100vh;
+                top: 120px;
+                .coverImage {
+                    margin: 0 0 20px 0;
+                }
+                .infoIcon {
+                    width: 100%;
+                    height: auto;
+                    position: static;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            .medium {
+                width: 68%;
+            }
+        }
+    }
+    @media screen and (min-width:1024px) {
+        margin: 100px auto;
+        width: 810px;
+        .detail {
+            .cover {
+                width: 200px;
+            }
+            .medium {
+                width: 560px;
+            }
+        }
+    }
+}

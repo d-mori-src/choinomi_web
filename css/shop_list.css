@@ -1,0 +1,12 @@
+.salesList {
+  margin: 70px auto;
+  width: calc(100% - 80px);
+}
+
+@media screen and (min-width: 1024px) {
+  .salesList {
+    margin: 100px auto;
+    width: 810px;
+  }
+}
+/*# sourceMappingURL=shop_list.css.map */

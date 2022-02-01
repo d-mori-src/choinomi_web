@@ -58,6 +58,7 @@
 .top .about .leftAbout p {
   text-align: justify;
   font-size: 12px;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -65,9 +66,340 @@
   display: none;
 }
 
+.top .books {
+  width: calc(100% - 80px);
+  margin: 0 auto 40px;
+}
+
+.top .books h3 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #000;
+}
+
+.top .books h3 span {
+  font-size: 14px;
+  margin: 0 0 0 2px;
+  position: relative;
+  top: 2px;
+}
+
+.top .books .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.top .books .items .item {
+  width: 45%;
+  margin: 0 0 24px 0;
+}
+
+.top .books .items .item .bookImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+  margin: 0 0 16px 0;
+}
+
+.top .books .items .item p {
+  text-align: center;
+  font-size: 12px;
+  margin: 0 0 4px 0;
+}
+
+.top .books .items .item .state {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.top .books .items .item .active {
+  color: #B9222A;
+}
+
+.top .news {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.top .news .items .item {
+  margin: 0 0 20px 0;
+  padding: 0 0 18px 0;
+  border-bottom: 1px solid #AFAFAF;
+  height: auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.top .news .items .item:first-child {
+  padding: 20px 0 18px;
+  border-top: 1px solid #AFAFAF;
+}
+
+.top .news .items .item h4 {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 6px 0;
+}
+
+.top .news .items .item a, .top .news .items .item p {
+  display: block;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.top .news .items .is-hidden {
+  display: none;
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.top .news .more,
+.top .news .close {
+  text-align: center;
+  font-size: 11px;
+  width: 216px;
+  padding: 16px 16px 14px;
+  margin: 32px auto;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.top .news .more span .arrowImage,
+.top .news .close span .arrowImage {
+  width: 9px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 24px;
+  bottom: 0;
+  margin: auto;
+}
+
+.top .news .close {
+  display: none;
+}
+
+.top .secTitle .secTitleImage {
+  display: block;
+  width: auto;
+  height: 76px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    margin: 100px 0 0 0;
+  }
+  .top .hero .title {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .top .hero .main {
+    width: 90%;
+    position: relative;
+    top: -40px;
+  }
+  .top .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 80%;
+    margin: -100px auto 40px;
+  }
+  .top .about .leftAbout {
+    width: 56%;
+  }
+  .top .about .leftAbout h2 {
+    margin: 0 0 12px 0;
+  }
+  .top .about .leftAbout h2 .h2Logo {
+    width: 200px;
+  }
+  .top .about .leftAbout .sp_aboutImage {
+    display: none;
+  }
+  .top .about .leftAbout p {
+    line-height: 1.8;
+  }
+  .top .about .rightAbout {
+    display: block;
+    width: 36%;
+  }
+  .top .about .rightAbout .pc_aboutImage {
+    width: 100%;
+    height: auto;
+  }
+  .top .books {
+    width: 80%;
+  }
+  .top .books .items .item {
+    width: 23%;
+  }
+  .top .books .items::after {
+    display: block;
+    content: "";
+    width: 23%;
+  }
+  .top .books .items::before {
+    content: "";
+    display: block;
+    width: 23%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .top .news {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .top {
     margin: 120px 0 0 0;
+  }
+  .top .hero .title {
+    width: 640px;
+  }
+  .top .hero .main {
+    width: 920px;
+  }
+  .top .about {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 810px;
+    margin: -160px auto 100px;
+  }
+  .top .about .leftAbout {
+    width: 490px;
+  }
+  .top .about .leftAbout h2 {
+    margin: 0 0 24px 0;
+  }
+  .top .about .leftAbout h2 .h2Logo {
+    width: 275px;
+  }
+  .top .about .leftAbout .sp_aboutImage {
+    display: none;
+  }
+  .top .about .leftAbout p {
+    font-size: 13px;
+    line-height: 2.3;
+  }
+  .top .about .rightAbout {
+    width: 280px;
+  }
+  .top .books {
+    width: 810px;
+    margin: 0 auto 100px;
+  }
+  .top .books h3 {
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    padding: 0 0 16px 0;
+  }
+  .top .books h3 span {
+    font-size: 16px;
+    margin: 0 0 0 4px;
+  }
+  .top .books .items .item {
+    width: 170px;
+    margin: 0 0 40px 0;
+  }
+  .top .books .items .item p {
+    font-size: 13px;
+    margin: 0 0 10px 0;
+  }
+  .top .books .items .item .state {
+    font-size: 18px;
+  }
+  .top .books .items::after {
+    width: 170px;
+  }
+  .top .books .items::before {
+    width: 170px;
+  }
+  .top .news {
+    width: 810px;
+  }
+  .top .news .items .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 20px 0;
+    padding: 0 60px 20px;
+  }
+  .top .news .items .item:first-child {
+    padding: 24px 60px 20px;
+  }
+  .top .news .items .item h4 {
+    margin: 0;
+    position: relative;
+    top: 4px;
+  }
+  .top .news .items .item a, .top .news .items .item p {
+    width: 560px;
+  }
+  .top .news .items .is-hidden {
+    display: none;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .top .news .more,
+  .top .news .close {
+    font-size: 13px;
+    width: 240px;
+    padding: 20px 20px 18px;
+    margin: 40px auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .top .news .more:hover,
+  .top .news .close:hover {
+    color: #fff;
+    background: #000;
+  }
+  .top .news .more span .arrowImage,
+  .top .news .close span .arrowImage {
+    width: 12px;
+  }
+  .top .news .close {
+    display: none;
+  }
+  .top .secTitle .secTitleImage {
+    height: 90px;
+    margin: 0 auto 40px;
   }
 }
 /*# sourceMappingURL=top.css.map */

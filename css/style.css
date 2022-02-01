@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: sans-serif;
   color: #000;
   overflow-x: hidden;
   background: #F0F2E7;
@@ -52,5 +53,32 @@ img {
   .pc {
     display: block;
   }
+}
+
+a.anchor {
+  display: block;
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+ul.bread {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul.bread li {
+  font-size: 11px;
+  margin: 0 20px 0 0;
+}
+
+ul.bread li img {
+  width: 5px;
+  height: auto;
+  position: relative;
+  top: 2px;
 }
 /*# sourceMappingURL=style.css.map */

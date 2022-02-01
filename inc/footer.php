@@ -8,15 +8,15 @@
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">神戸版</a></li>
-                    <li><a href="">姫路版</a></li>
-                    <li><a href="">大阪キタ版</a></li>
-                    <li><a href="">大阪ミナミ版</a></li>
-                    <li><a href="">京都版</a></li>
-                    <li><a href="">岡山版</a></li>
-                    <li><a href="">福岡版</a></li>
+                    <li><a href="/kobe/">神戸版</a></li>
+                    <li><a href="/himeji/">姫路版</a></li>
+                    <li><a href="/osaka_kita/">大阪キタ版</a></li>
+                    <li><a href="/osaka_minami/">大阪ミナミ版</a></li>
+                    <li><a href="/kyoto/">京都版</a></li>
+                    <li><a href="/okayama/">岡山版</a></li>
+                    <li><a href="/fukuoka/">福岡版</a></li>
                 </ul>
-                <a href="" class="issue">ちょい飲み手帖をあなたの地域で発行してみませんか？</a>
+                <a href="/franchise/" class="issue">ちょい飲み手帖をあなたの地域で発行してみませんか？</a>
                 <p>
                     株式会社SRCパートナーズ<br />
                     〒650-0037 神戸市中央区明石町48 神戸ダイヤモンドビル8F<br />

@@ -1,0 +1,12 @@
+.salesInfo {
+  margin: 70px auto;
+  width: calc(100% - 80px);
+}
+
+@media screen and (min-width: 1024px) {
+  .salesInfo {
+    margin: 100px auto;
+    width: 810px;
+  }
+}
+/*# sourceMappingURL=sales_info.css.map */

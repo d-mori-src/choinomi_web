@@ -46,6 +46,7 @@
             p {
                 text-align: justify;
                 font-size: 12px;
+                font-weight: 400;
                 line-height: 2;
             }
         }
@@ -53,10 +54,311 @@
             display: none;
         }
     }
+    .books {
+        width: calc(100% - 80px);
+        margin: 0 auto 40px;
+        h3 {
+            font-size: 18px;
+            margin: 0 0 16px 0;
+            padding: 0 0 12px 0;
+            border-bottom: 1px solid #000;
+            span {
+                font-size: 14px;
+                margin: 0 0 0 2px;
+                position: relative;
+                top: 2px;
+            }
+        }
+        .items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item {
+                width: 45%;
+                margin: 0 0 24px 0;
+                .bookImage {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    filter: drop-shadow(0 0 30px rgba(0,0,0,0.1));
+                    margin: 0 0 16px 0;
+                }
+                p {
+                    text-align: center;
+                    font-size: 12px;
+                    margin: 0 0 4px 0;
+                }
+                .state {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .active {
+                    color: #B9222A;
+                }
+            }
+        }
+    }
+    .news {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+        .items {
+            .item {
+                margin: 0 0 20px 0;
+                padding: 0 0 18px 0;
+                border-bottom: 1px solid #AFAFAF;
+                height: auto;
+                transition: .5s;
+                overflow: hidden;
+                &:first-child {
+                    padding: 20px 0 18px;
+                    border-top: 1px solid #AFAFAF;
+                }
+                h4 {
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    margin: 0 0 6px 0;
+                }
+                a, p {
+                    display: block;
+                    text-align: justify;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 1.7;
+                    letter-spacing: 1px;
+                }
+            }
+            .is-hidden {
+                display: none;
+                opacity: 0;
+                height: 0;
+                margin: 0;
+                padding:0;
+            }
+        }
+        .more,
+        .close {
+            text-align: center;
+            font-size: 11px;
+            width: 216px;
+            padding: 16px 16px 14px;
+            margin: 32px auto;
+            border: 1px solid #000;
+            cursor: pointer;
+            position: relative;
+            span {
+                .arrowImage {
+                    width: 9px;
+                    height: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+        }
+        .close {
+            display: none;
+        }
+    }
+    .secTitle {
+        .secTitleImage {
+            display: block;
+            width: auto;
+            height: 76px;
+            margin: 0 auto 20px;
+        }
+    }
     @media screen and (min-width:768px) {
-
+        margin: 100px 0 0 0;
+        .hero {
+            .title {
+                width: 70%;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+            }
+            .main {
+                width: 90%;
+                position: relative;
+                top: -40px;
+            }
+        }
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 80%;
+            margin: -100px auto 40px;
+            .leftAbout {
+                width: 56%;
+                h2 {
+                    margin: 0 0 12px 0;
+                    .h2Logo {
+                        width: 200px;
+                    }
+                }
+                .sp_aboutImage {
+                    display: none;
+                }
+                p {
+                    line-height: 1.8;
+                }
+            }
+            .rightAbout {
+                display: block;
+                width: 36%;
+                .pc_aboutImage {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .books {
+            width: 80%;
+            .items {
+                .item {
+                    width: 23%;
+                }
+                &::after {
+                    display: block;
+                    content:"";
+                    width: 23%;
+                }
+                &::before { 
+                    content: ""; 
+                    display: block; 
+                    width: 23%;
+                    order: 1;
+                }
+            }
+        }
+        .news {
+            width: 80%;
+        }
     }
     @media screen and (min-width:1024px) {
         margin: 120px 0 0 0;
+        .hero {
+            .title {
+                width: 640px;
+            }
+            .main {
+                width: 920px;
+            }
+        }
+        .about {
+            align-items: flex-end;
+            width: 810px;
+            margin: -160px auto 100px;
+            .leftAbout {
+                width: 490px;
+                h2 {
+                    margin: 0 0 24px 0;
+                    .h2Logo {
+                        width: 275px;
+                    }
+                }
+                .sp_aboutImage {
+                    display: none;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 2.3;
+                }
+            }
+            .rightAbout {
+                width: 280px;
+            }
+        }
+        .books {
+            width: 810px;
+            margin: 0 auto 100px;
+            h3 {
+                font-size: 24px;
+                margin: 0 0 24px 0;
+                padding: 0 0 16px 0;
+                span {
+                    font-size: 16px;
+                    margin: 0 0 0 4px;
+                }
+            }
+            .items {
+                .item {
+                    width: 170px;
+                    margin: 0 0 40px 0;
+                    p {
+                        font-size: 13px;
+                        margin: 0 0 10px 0;
+                    }
+                    .state {
+                        font-size: 18px;
+                    }
+                }
+                &::after {
+                    width: 170px;
+                }
+                &::before { 
+                    width: 170px;
+                }
+            }
+        }
+        .news {
+            width: 810px;
+            .items {
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 20px 0;
+                    padding: 0 60px 20px;
+                    &:first-child {
+                        padding: 24px 60px 20px;
+                    }
+                    h4 {
+                        margin: 0;
+                        position: relative;
+                        top: 4px;
+                    }
+                    a, p {
+                        width: 560px;
+                    }
+                }
+                .is-hidden {
+                    display: none;
+                    opacity: 0;
+                    height: 0;
+                    margin: 0;
+                    padding:0;
+                }
+            }
+            .more,
+            .close {
+                font-size: 13px;
+                width: 240px;
+                padding: 20px 20px 18px;
+                margin: 40px auto;
+                transition: .5s;
+                &:hover {
+                    color: #fff;
+                    background: #000;
+                }
+                span {
+                    .arrowImage {
+                        width: 12px;
+                    }
+                }
+            }
+            .close {
+                display: none;
+            }
+        }
+        .secTitle {
+            .secTitleImage {
+                height: 90px;
+                margin: 0 auto 40px;
+            }
+        }
     }
 }

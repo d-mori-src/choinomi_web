@@ -6,7 +6,7 @@
 ?>
     <main class="sales">
         <?php foreach ($shops as $key =>  $shop): ?>
-            <?php if ($key == 'himeji'): ?>
+            <?php if ($key == 'osaka'): ?>
                 <?php include_once(ROOT.'inc/shop.php'); ?>
             <?php endif; ?>
         <?php endforeach; ?>

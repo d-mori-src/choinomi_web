@@ -25,6 +25,7 @@ window.addEventListener('scroll', showElementAnimation);
 // jQuery実行
 $(function(){
     moreBtn(); // もっとみるボタン
+
 });
 
 // もっとみるボタン

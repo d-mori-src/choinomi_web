@@ -2,12 +2,12 @@
     define('ROOT', '../');
     include_once(ROOT.'inc/header.php');
     include_once(ROOT.'resource/shops.php');
-    include_once(ROOT.'controller/AppController.php');
+    include_once(ROOT.'controller/SalesController.php');
 ?>
-    <main class="sales">
+    <main class="salesInfo">
         <?php foreach ($shops as $key =>  $shop): ?>
-            <?php if ($key == 'himeji'): ?>
-                <?php include_once(ROOT.'inc/shop.php'); ?>
+            <?php if ($key == 'osaka'): ?>
+                <?php include_once(ROOT.'inc/sales_info.php'); ?>
             <?php endif; ?>
         <?php endforeach; ?>
     </main>

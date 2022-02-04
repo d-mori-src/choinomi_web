@@ -2,17 +2,62 @@
     margin: 70px auto;
     width: calc(100% - 80px);
     .detail {
-        
-    }
-
-    @media screen and (min-width:768px) {
-
+        margin: 48px 0 0 0;
+        table {
+            font-size: 12px;
+            line-height: 1.5;
+            border-collapse:  collapse;
+            th, td {
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            thead {
+                tr {
+                    th {
+                        background: #E9EBEB;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        width: 40%;
+                        background: #fff;
+                        &:first-child {
+                            text-align: center;
+                            vertical-align: middle;
+                            width: 60px;
+                            background: #E9EBEB;
+                        }
+                    }
+                }
+            }
+        }
     }
     @media screen and (min-width:1024px) {
         margin: 100px auto;
         width: 810px;
         .detail {
-            
+            table {
+                font-size: 14px;
+                th, td {
+                    padding: 14px 24px;
+                }
+                tbody {
+                    tr {
+                        td {
+                            width: 40%;
+                            background: #fff;
+                            &:first-child {
+                                text-align: center;
+                                vertical-align: middle;
+                                width: 60px;
+                                background: #E9EBEB;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

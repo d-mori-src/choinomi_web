@@ -3,10 +3,57 @@
   width: calc(100% - 80px);
 }
 
+.salesInfo .detail {
+  margin: 48px 0 0 0;
+}
+
+.salesInfo .detail table {
+  font-size: 12px;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+
+.salesInfo .detail table th, .salesInfo .detail table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.salesInfo .detail table thead tr th {
+  background: #E9EBEB;
+}
+
+.salesInfo .detail table tbody tr td {
+  width: 40%;
+  background: #fff;
+}
+
+.salesInfo .detail table tbody tr td:first-child {
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+  background: #E9EBEB;
+}
+
 @media screen and (min-width: 1024px) {
   .salesInfo {
     margin: 100px auto;
     width: 810px;
+  }
+  .salesInfo .detail table {
+    font-size: 14px;
+  }
+  .salesInfo .detail table th, .salesInfo .detail table td {
+    padding: 14px 24px;
+  }
+  .salesInfo .detail table tbody tr td {
+    width: 40%;
+    background: #fff;
+  }
+  .salesInfo .detail table tbody tr td:first-child {
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    background: #E9EBEB;
   }
 }
 /*# sourceMappingURL=sales_info.css.map */

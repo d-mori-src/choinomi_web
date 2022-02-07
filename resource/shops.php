@@ -67,7 +67,7 @@
 			'questionnaire_start' => '2021-12-07 00:00:00',
 			'questionnaire_end' => '2022-04-01 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/71/',
-			'google_map' => 'https://www.google.com/maps/d/embed?mid=1s9nrD6Naf2QRrigPNt2N-Hdp21nbBA_X&ehbc=2E312F',
+			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1s9nrD6Naf2QRrigPNt2N-Hdp21nbBA_X&ehbc=2E312F" width="640" height="480"></iframe>',
         ],
 
 		// 大阪版
@@ -129,6 +129,6 @@
 			'questionnaire_start' => '2021-12-07 00:00:00',
 			'questionnaire_end' => '2022-04-01 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/71/',
-			'google_map' => null,
+			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=19PNdkqZS0AnSpHO8MgbYluDg1M5GJ-q9&ehbc=2E312F" width="640" height="480"></iframe>',
         ],
 	];

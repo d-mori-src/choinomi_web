@@ -8,7 +8,7 @@
 
 <?php if ($shop['google_map'] !==  null): ?>
     <section class="googleMap">
-        <iframe src="<?=$shop['google_map']?>" width="800" height="450"></iframe>
+        <?=$shop['google_map']?>
     </section>
 <?php endif; ?>
 

@@ -8,10 +8,20 @@
 
 <section class="detail">
     <table>
-        <thead><tr><th></th><th>店舗名</th><th>住所</th></tr></thead>
+        <thead>
+            <tr>
+                <th></th>
+                <th>店舗名</th>
+                <th>住所</th>
+            </tr>
+        </thead>
         <tbody>
             <?php foreach(${$key . '_sales_array'} as $val): ?>
-                <tr><td><?=$val[0];?></td><td><?=$val[1];?></td><td><?=$val[2];?></td></tr>
+                <tr>
+                    <td><?=$val[0];?></td>
+                    <td><?=$val[1];?></td>
+                    <td><?=$val[2];?></td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>

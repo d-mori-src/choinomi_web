@@ -1,6 +1,14 @@
 .salesList {
     margin: 70px auto;
     width: calc(100% - 80px);
+    .googleMap {
+        margin: 48px 0 0 0;
+        iframe {
+            width: 100%;
+            height: 240px;
+            border: none;
+        }
+    }
     .detail {
         margin: 48px 0 0 0;
         padding: 24px 20px;
@@ -79,6 +87,11 @@
     @media screen and (min-width:1024px) {
         margin: 100px auto;
         width: 810px;
+        .googleMap {
+            iframe {
+                height: 450px;
+            }
+        }
         .detail {
             padding: 80px 104px;
             ul.shopList {

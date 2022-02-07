@@ -6,6 +6,12 @@
     <li>vol.<?=$shop['vol']?> 掲載店舗</li>
 </ul>
 
+<?php if ($shop['google_map'] !==  null): ?>
+    <section class="googleMap">
+        <iframe src="<?=$shop['google_map']?>" width="800" height="450"></iframe>
+    </section>
+<?php endif; ?>
+
 <section class="detail">
     <ul class="shopList">
         <?php foreach(${$key . '_shops_array'} as $val): ?>

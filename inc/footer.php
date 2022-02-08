@@ -1,3 +1,6 @@
+<?php
+    include_once(ROOT.'resource/shops.php');
+?>
         <footer>
             <section class="trademark">
                 <p>「ちょい飲み手帖」は株式会社SRCパートナーズにより商標登録済みです。</p>
@@ -9,13 +12,9 @@
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/kobe/">神戸版</a></li>
-                    <li><a href="/himeji/">姫路版</a></li>
-                    <li><a href="/osaka_kita/">大阪キタ版</a></li>
-                    <li><a href="/osaka_minami/">大阪ミナミ版</a></li>
-                    <li><a href="/kyoto/">京都版</a></li>
-                    <li><a href="/okayama/">岡山版</a></li>
-                    <li><a href="/fukuoka/">福岡版</a></li>
+                    <?php foreach ($shops as $key =>  $shop): ?>
+                        <li><a href="/<?=$key?>/"><?=$shop['name']?>版</a></li>
+                    <?php endforeach; ?>
                 </ul>
                 <p>
                     株式会社SRCパートナーズ<br />
@@ -26,7 +25,7 @@
             </section>
         </footer>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

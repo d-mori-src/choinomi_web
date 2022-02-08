@@ -38,10 +38,10 @@
                 <a href="/"><img src="/img/common/logo_wh.svg" class="logoImage" alt="ちょい飲み手帖" width="160" height="27" loading="lazy"></a>
 
                 <ul class="pc-navi">
-                    <li><a href="/franchise/"><img src="/img/common/pc-naviAbout.svg" alt="書籍一覧" width="" height="" loading="lazy"></a></li>
-                    <li><a href="/#book"><img src="/img/common/pc-naviBook.svg" alt="書籍一覧" width="" height="" loading="lazy"></a></li>
-                    <li><a href="/#news"><img src="/img/common/pc-naviNews.svg" alt="お知らせ" width="" height="" loading="lazy"></a></li>
-                    <li><a href="/contact/"><img src="/img/common/pc-naviContact.svg" alt="お問い合わせ" width="" height="" loading="lazy"></a></li>
+                    <li><a href="/franchise/"><img src="/img/common/pc-naviAbout.svg" alt="書籍一覧" width="117" height="12" loading="lazy"></a></li>
+                    <li><a href="/#book"><img src="/img/common/pc-naviBook.svg" alt="書籍一覧" width="51" height="12" loading="lazy"></a></li>
+                    <li><a href="/#news"><img src="/img/common/pc-naviNews.svg" alt="お知らせ" width="55" height="12" loading="lazy"></a></li>
+                    <li><a href="/contact/"><img src="/img/common/pc-naviContact.svg" alt="お問い合わせ" width="76" height="12" loading="lazy"></a></li>
                 </ul>
             </section>
         </header>

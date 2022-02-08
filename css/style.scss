@@ -58,3 +58,31 @@ ul.bread {
         }
     }
 }
+
+// CVボタン
+.cvbtn {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    background: #1E2C4B;
+    position: relative;
+    img {
+        width: 6px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+    }
+    @media screen and (min-width:768px) {
+        width: 80%;
+    }
+    @media screen and (min-width:1024px) {
+        width: 330px;
+    }
+}

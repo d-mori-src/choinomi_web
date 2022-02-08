@@ -5,6 +5,7 @@
             <section class="innerFooter">
                 <ul>
                     <li><a href="/">ホーム</a></li>
+                    <li><a href="/franchise/">ちょい飲み手帖とは</a></li>
                     <li><a href="/contact/">お問い合わせ</a></li>
                 </ul>
                 <ul>
@@ -16,7 +17,6 @@
                     <li><a href="/okayama/">岡山版</a></li>
                     <li><a href="/fukuoka/">福岡版</a></li>
                 </ul>
-                <a href="/franchise/" class="issue">ちょい飲み手帖をあなたの地域で発行してみませんか？</a>
                 <p>
                     株式会社SRCパートナーズ<br />
                     〒650-0037 神戸市中央区明石町48 神戸ダイヤモンドビル8F<br />

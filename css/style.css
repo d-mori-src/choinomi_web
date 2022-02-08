@@ -81,4 +81,38 @@ ul.bread li img {
   position: relative;
   top: 2px;
 }
+
+.cvbtn {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  background: #1E2C4B;
+  position: relative;
+}
+
+.cvbtn img {
+  width: 6px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .cvbtn {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cvbtn {
+    width: 330px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/css/sales.css">
     <link rel="stylesheet" href="/css/sales_info.css">
     <link rel="stylesheet" href="/css/shop_list.css">
+    <link rel="stylesheet" href="/css/franchise.css">
 </head>
 <body>
     <div class="container">
@@ -37,6 +38,7 @@
                 <a href="/"><img src="/img/common/logo_wh.svg" class="logoImage" alt="ちょい飲み手帖" width="160" height="27" loading="lazy"></a>
 
                 <ul class="pc-navi">
+                    <li><a href="/franchise/"><img src="/img/common/pc-naviAbout.svg" alt="書籍一覧" width="" height="" loading="lazy"></a></li>
                     <li><a href="/#book"><img src="/img/common/pc-naviBook.svg" alt="書籍一覧" width="" height="" loading="lazy"></a></li>
                     <li><a href="/#news"><img src="/img/common/pc-naviNews.svg" alt="お知らせ" width="" height="" loading="lazy"></a></li>
                     <li><a href="/contact/"><img src="/img/common/pc-naviContact.svg" alt="お問い合わせ" width="" height="" loading="lazy"></a></li>
@@ -54,6 +56,7 @@
         <div id="sidebarMenu">
             <ul>
                 <li><a href="/"><img src="/img/common/sp-naviHome.svg" alt="ホーム" width="65" height="11" loading="lazy"></a></li>
+                <li><a href="/franchise/"><img src="/img/common/sp-naviAbout.svg" alt="ホーム" width="65" height="11" loading="lazy"></a></li>
                 <li><a href="/contact/"><img src="/img/common/sp-naviContact.svg" alt="お問い合わせ" width="114" height="15" loading="lazy"></a></li>
             </ul>
         </div>

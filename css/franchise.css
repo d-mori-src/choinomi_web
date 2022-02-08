@@ -1,0 +1,292 @@
+.franchise {
+  margin: 56px auto 70px;
+}
+
+.franchise .eyecatch {
+  margin: 0 0 10px 0;
+  background-image: url(../img/franchise/eyecatch.jpg);
+  height: 280px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.franchise .eyecatch .titleImage {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.franchise .contents {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.franchise .contents .concept {
+  margin: 40px 0;
+}
+
+.franchise .contents .concept .leftText h2 {
+  font-size: 20px;
+  line-height: 1;
+  color: #1E2C4B;
+  margin: 0 0 24px 0;
+}
+
+.franchise .contents .concept .leftText p {
+  text-align: justify;
+  font-size: 12px;
+  line-height: 2.3;
+  color: #000;
+  margin: 0 0 24px 0;
+}
+
+.franchise .contents .features {
+  margin: 0 0 40px 0;
+  padding: 40px 20px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.franchise .contents .features h3 {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  color: #1E2C4B;
+  margin: 0 0 24px 0;
+  border: 1px solid #1E2C4B;
+  border-radius: 30px;
+  padding: 18px;
+}
+
+.franchise .contents .features .featuresItems .featuresItem {
+  margin: 0 0 24px 0;
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.franchise .contents .features .featuresItems .featuresItem dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #1E2C4B;
+  margin: 0 0 12px 0;
+}
+
+.franchise .contents .features .featuresItems .featuresItem dt span {
+  font-size: 32px;
+  color: rgba(30, 45, 75, 0.3);
+  margin: 0 10px 0 0;
+}
+
+.franchise .contents .features .featuresItems .featuresItem dd {
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.franchise .contents .features .featuresItems .featuresItem:last-child {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+}
+
+.franchise .contents .contactItems .cvbtn {
+  margin: 0 auto 20px;
+}
+
+.franchise .contents .contactItems .or {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  margin: 0 0 20px 0;
+}
+
+.franchise .contents .contactItems .contactItem {
+  padding: 36px 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.franchise .contents .contactItems .contactItem .phone {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #000;
+}
+
+.franchise .contents .contactItems .contactItem .phone p {
+  margin: 0 0 6px 0;
+}
+
+.franchise .contents .contactItems .contactItem .phone a span {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+}
+
+.franchise .contents .contactItems .contactItem p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.franchise .contents .contactItems .contactItem a {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .franchise .contents .concept {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .franchise .contents .concept .leftText {
+    width: 46%;
+  }
+  .franchise .contents .concept .rightImage {
+    width: 48%;
+    position: relative;
+  }
+  .franchise .contents .concept .rightImage .conceptImage {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .franchise .contents .concept .rightImage .coverImage {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    right: -12px;
+    bottom: 48px;
+    -webkit-filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+  }
+  .franchise .contents .features {
+    padding: 80px 40px;
+  }
+  .franchise .contents .features h3 {
+    font-size: 14px;
+    width: 280px;
+    margin: 0 auto 24px;
+    padding: 20px;
+  }
+  .franchise .contents .features .featuresItems .featuresItem dt {
+    font-size: 20px;
+  }
+  .franchise .contents .contactItems .contactItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .franchise .contents .contactItems .contactItem .phone {
+    margin: 0 24px 0 0;
+    padding: 0 24px 0 0;
+    border-bottom: none;
+    border-right: 1px solid #000;
+  }
+  .franchise .contents .contactItems .contactItem .phone p {
+    margin: 0;
+  }
+  .franchise .contents .contactItems .contactItem p {
+    text-align: left;
+    line-height: 1.9;
+  }
+  .franchise .contents .contactItems .contactItem a {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .franchise {
+    margin: 76px auto 100px;
+  }
+  .franchise .eyecatch {
+    height: 320px;
+    margin: 0 0 20px 0;
+  }
+  .franchise .eyecatch .titleImage {
+    width: 280px;
+  }
+  .franchise .contents {
+    width: 810px;
+  }
+  .franchise .contents .concept {
+    margin: 80px 0;
+  }
+  .franchise .contents .concept .leftText {
+    width: 370px;
+  }
+  .franchise .contents .concept .leftText h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+  .franchise .contents .concept .leftText p {
+    font-size: 13px;
+    line-height: 2.1;
+    margin: 0 0 36px 0;
+  }
+  .franchise .contents .concept .rightImage {
+    width: 386px;
+  }
+  .franchise .contents .concept .rightImage .coverImage {
+    width: 160px;
+    right: -48px;
+    bottom: 0;
+  }
+  .franchise .contents .features {
+    margin: 0 0 80px 0;
+    padding: 80px;
+  }
+  .franchise .contents .features h3 {
+    margin: 0 auto 40px;
+  }
+  .franchise .contents .features .featuresItems .featuresItem {
+    margin: 0 0 40px 0;
+    padding: 0 0 40px 0;
+  }
+  .franchise .contents .features .featuresItems .featuresItem dt {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+  }
+  .franchise .contents .features .featuresItems .featuresItem dt span {
+    margin: 0 28px 0 0;
+  }
+  .franchise .contents .features .featuresItems .featuresItem dd {
+    font-size: 14px;
+    line-height: 2.1;
+  }
+  .franchise .contents .contactItems .cvbtn {
+    margin: 0 auto 30px;
+  }
+  .franchise .contents .contactItems .or {
+    font-size: 14px;
+    margin: 0 0 30px 0;
+  }
+  .franchise .contents .contactItems .contactItem .phone {
+    margin: 0 40px 0 0;
+    padding: 0 40px 0 0;
+  }
+}
+/*# sourceMappingURL=franchise.css.map */

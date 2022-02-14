@@ -26,10 +26,11 @@
             margin: 40px 0;
             .leftText {
                 h2 {
-                    font-size: 20px;
-                    line-height: 1;
-                    color: #1E2C4B;
                     margin: 0 0 24px 0;
+                    .h2Logo {
+                        width: 240px;
+                        height: auto;
+                    }
                 }
                 p {
                     text-align: justify;
@@ -138,6 +139,12 @@
                 justify-content: space-between;
                 .leftText {
                     width: 46%;
+                    h2 {
+                        margin: 0 0 12px 0;
+                        .h2Logo {
+                            width: 200px;
+                        }
+                    }
                 }
                 .rightImage {
                     width: 48%;
@@ -213,8 +220,10 @@
                 .leftText {
                     width: 370px;
                     h2 {
-                        font-size: 24px;
-                        margin: 0 0 20px 0;
+                        margin: 0 0 24px 0;
+                        .h2Logo {
+                            width: 275px;
+                        }
                     }
                     p {
                         font-size: 13px;

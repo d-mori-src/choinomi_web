@@ -33,10 +33,12 @@
 }
 
 .franchise .contents .concept .leftText h2 {
-  font-size: 20px;
-  line-height: 1;
-  color: #1E2C4B;
   margin: 0 0 24px 0;
+}
+
+.franchise .contents .concept .leftText h2 .h2Logo {
+  width: 240px;
+  height: auto;
 }
 
 .franchise .contents .concept .leftText p {
@@ -162,6 +164,12 @@
   .franchise .contents .concept .leftText {
     width: 46%;
   }
+  .franchise .contents .concept .leftText h2 {
+    margin: 0 0 12px 0;
+  }
+  .franchise .contents .concept .leftText h2 .h2Logo {
+    width: 200px;
+  }
   .franchise .contents .concept .rightImage {
     width: 48%;
     position: relative;
@@ -239,8 +247,10 @@
     width: 370px;
   }
   .franchise .contents .concept .leftText h2 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
+    margin: 0 0 24px 0;
+  }
+  .franchise .contents .concept .leftText h2 .h2Logo {
+    width: 275px;
   }
   .franchise .contents .concept .leftText p {
     font-size: 13px;

@@ -14,9 +14,11 @@
             </ul>
             <div class="concept">
                 <div class="leftText">
-                    <h2>ちょい飲み手帖とは</h2>
-                    <p>出版の新しいカタチ。読む本から使える本へ。リアルのチカラで地域プロモーションを実現します。デジタル全盛期である今だからこそリアルの重要性が問われる現在、「食」をテーマとした出版事業を展開。神戸や大阪、京都エリアの有名店や人気店・隠れた名店など、オススメ掲載店の名物料理とお酒を組み合わせた“ちょい飲みセット”を1,000円で愉しめる「ちょい飲み手帖」を発行しています。</p>
-                    <a href="/contact/" class="cvbtn">無料相談はこちら<img src="/img/franchise/arrow_wh.svg" alt="" width="3" height="6" loading="lazy" /></a>
+                    <h2><img src="/img/top/h2_about.svg" class="h2Logo" alt="ちょい飲み手帖とは" width="278" height="38" loading="lazy" /></h2>
+                    <p>
+                        出版の新しいカタチ。読む本から使える本へ。リアルのチカラで地域プロモーションを実現します。デジタル全盛期である今だからこそリアルの重要性が問われる現在、「食」をテーマとした出版事業を展開。神戸や大阪、京都エリアの有名店や人気店・隠れた名店など、オススメ掲載店の名物料理とお酒を組み合わせた“ちょい飲みセット”を1,000円で愉しめる「ちょい飲み手帖」を発行しています。
+                    </p>
+                    <a href="/contact/" class="cvbtn">お問い合わせはこちら<img src="/img/franchise/arrow_wh.svg" alt="" width="3" height="6" loading="lazy" /></a>
                 </div>
                 <div class="pc rightImage">
                     <img src="/img/franchise/kobe.jpg" class="coverImage" alt="ちょい飲み手帖" width="" height="" loading="lazy" />
@@ -40,12 +42,12 @@
                     </dl>
                     <dl class="featuresItem">
                         <dt><span>04</span>自動組版システムで<br class="sp" />デザイナーいらず!</dt>
-                        <dd>時間とコストの大きな要因「デザイン作業」は、web環境さえあれば、自動組版システムで一気に解決!簡単な入力のみで、その場ですぐに校正確認ができます。</dd>
+                        <dd>時間とコストの大きな要因「デザイン作業」は、Web環境さえあれば、自動組版システムで一気に解決!簡単な入力のみで、その場ですぐに校正確認ができます。</dd>
                     </dl>
                 </div>
             </div>
             <div class="contactItems">
-                <a href="/contact/" class="cvbtn">無料相談はこちら<img src="/img/franchise/arrow_wh.svg" alt="" width="3" height="6" loading="lazy" /></a>
+                <a href="/contact/" class="cvbtn">メールでの無料相談はこちら<img src="/img/franchise/arrow_wh.svg" alt="" width="3" height="6" loading="lazy" /></a>
                 <p class="or">もしくは</p>
                 <div class="contactItem">
                     <div class="phone">

@@ -108,35 +108,6 @@
                 </li>
                 <?php endforeach; ?>
             </ul>
-            <!-- <ul class="items slidein">
-                <li class="item"><h4>2021.11.15</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.16」を2021年11月26日に発売します。</a></li>
-                <li class="item"><h4>2021.11.15</h4><a href="/himeji/">「ちょい飲み手帖 姫路版  vol.1」を2021年11月26日に発売します。</a></li>
-                <li class="item"><h4>2021.3.8</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.15」を2021年3月19日に発売します。</a></li>
-                <li class="item"><h4>2021.2.12</h4><a href="/okayama/">「ちょい飲み手帖 岡山版  vol.2」を2021年2月19日に発売します。</a></li>
-                <li class="item"><h4>2020.1.31</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.13」を2020年2月17日に発売します。</a></li>
-                <li class="item"><h4>2020.1.21</h4><a href="/okayama/">「ちょい飲み手帖 岡山版  vol.1」を2020年2月7日に発売します。</a></li>
-                <li class="item"><h4>2019.9.20</h4><a href="/osaka_minami/">「ちょい飲み手帖 大阪ミナミ版  vol.5」を2019年9月20日に発売します。</a></li>
-                <li class="item"><h4>2019.9.20</h4><a href="/kyoto/">「ちょい飲み手帖 京都版  vol.4」を2019年9月20日に発売します。</a></li>
-                <li class="item"><h4>2019.8.30</h4><a href="/fukuoka/">「ちょい飲み手帖 福岡版  vol.2」を2019年8月30日に発売します。</a></li>
-                <li class="item"><h4>2019.7.19</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.11」を2019年7月19日に発売します。</a></li>
-                <li class="item"><h4>2019.7.19</h4><a href="/osaka_kita/">「ちょい飲み手帖 大阪キタ版  vol.5」を2019年7月19日に発売します。</a></li>
-                <li class="item"><h4>2019.6.21</h4><a href="/osaka_minami/">「ちょい飲み手帖 大阪ミナミ版  vol.4」を2019年9月20日に発売します。</a></li>
-                <li class="item"><h4>2019.5.24</h4><a href="/kyoto/">「ちょい飲み手帖 京都版  vol.3」を2019年5月24日に発売します。</a></li>
-                <li class="item"><h4>2019.4.17</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.10」を2019年4月19日に発売します。</a></li>
-                <li class="item"><h4>2019.3.22</h4><a href="/osaka_kita/">「ちょい飲み手帖 大阪キタ版  vol.4」を2019年3月22日に発売します。</a></li>
-                <li class="item"><h4>2019.2.22</h4><a href="/osaka_minami/">「ちょい飲み手帖 大阪ミナミ版  vol.3」を2019年2月22日に発売します。</a></li>
-                <li class="item"><h4>2019.1.25</h4><a href="kyoto/">「ちょい飲み手帖 京都版  vol.2」を2019年1月25日に発売します。</a></li>
-                <li class="item"><h4>2019.1.22</h4><a href="/fukuoka/">「ちょい飲み手帖 福岡版  vol.1」を2019年1月25日に発売します。</a></li>
-                <li class="item"><h4>2019.1.17</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.9」を2019年1月18日に発売します。</a></li>
-                <li class="item"><h4>2018.10.19</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.8」を2018年10月19日に発売します。</a></li>
-                <li class="item"><h4>2018.9.11</h4><a href="/osaka_kita/">「ちょい飲み手帖 大阪キタ版  vol.3」を2018年9月23日に発売します。</a></li>
-                <li class="item"><h4>2018.8.16</h4><a href="/osaka_minami/">「ちょい飲み手帖 大阪ミナミ版  vol.2」を2018年8月24日に発売します。</a></li>
-                <li class="item"><h4>2018.7.12</h4><a href="/kobe/">「ちょい飲み手帖 神戸版  vol.7」を2018年7月20日に発売します。</a></li>
-                <li class="item"><h4>2018.7.12</h4><a href="/kyoto/">「ちょい飲み手帖 京都版  vol.1」を2018年7月20日に発売します。</a></li>
-                <li class="item"><h4>2018.5.17</h4><a href="/osaka_kita/">「ちょい飲み手帖 大阪キタ版 vol.2」を2018年5月25日に発売します。</a></li>
-                <li class="item"><h4>2018.4.9</h4><a href="/osaka_minami/">「ちょい飲み手帖 大阪ミナミ版 vol.1」を2018年4月20日に発売します。</a></li>
-                <li class="item"><h4>2018.4.09</h4><a href="/kobe/">「ちょい飲み手帖 神戸版 vol.6」を2018年4月20日に発売します。</a></li>
-            </ul> -->
             <div class="more">もっとみる<span><img src="/img/top/down_arrow.svg" class="arrowImage" alt="" width="9" height="5" loading="lazy" /></span></div>
             <div class="close">閉じる<span><img src="/img/top/top_arrow.svg" class="arrowImage" alt="" width="9" height="5" loading="lazy" /></span></div>
         </section>

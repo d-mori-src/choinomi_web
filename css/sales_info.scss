@@ -20,15 +20,17 @@
             }
             tbody {
                 tr {
+                    th {
+                        text-align: center;
+                        vertical-align: middle;
+                        width: 60px;
+                        background: #E9EBEB;
+                    }
                     td {
                         width: 40%;
                         background: #fff;
-                        &:first-child {
-                            text-align: center;
-                            vertical-align: middle;
-                            width: 60px;
-                            background: #E9EBEB;
-                        }
+                        text-align: left;
+                        vertical-align: middle;
                     }
                 }
             }
@@ -41,21 +43,7 @@
             table {
                 font-size: 14px;
                 th, td {
-                    padding: 14px 24px;
-                }
-                tbody {
-                    tr {
-                        td {
-                            width: 40%;
-                            background: #fff;
-                            &:first-child {
-                                text-align: center;
-                                vertical-align: middle;
-                                width: 60px;
-                                background: #E9EBEB;
-                            }
-                        }
-                    }
+                    padding: 7px 24px;
                 }
             }
         }

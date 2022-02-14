@@ -4,6 +4,7 @@
 		'himeji' => [
 			'vol' => 1,
 			'name' => '姫路',
+			'keyname' => 'himeji',
 			'cover' => 'himeji.jpg',
 			'area' => '駅東・駅西・駅南',
 			'book_release' => '2021-11-20 00:00:00',
@@ -74,6 +75,7 @@
 		'osaka' => [
 			'vol' => 1,
 			'name' => '大阪',
+			'keyname' => 'osaka',
 			'cover' => 'osaka.jpg',
 			'area' => '梅田・福島・なんば・心斎橋・天満・本町・京橋・天王寺',
 			'book_release' => '2021-04-23 00:00:00',

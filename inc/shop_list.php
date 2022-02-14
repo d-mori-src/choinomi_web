@@ -1,7 +1,7 @@
 <ul class="bread">
     <li><a href="/">ホーム</a></li>
     <li><img src="/img/shop/arrow.svg" alt="" width="6" height="3" loading="lazy"></li>
-    <li><a href="/<?=$key?>"><?=$shop['name']?>版</a></li>
+    <li><a href="/<?=$shop['keyname']?>"><?=$shop['name']?>版</a></li>
     <li><img src="/img/shop/arrow.svg" alt="" width="6" height="3" loading="lazy"></li>
     <li>vol.<?=$shop['vol']?> 掲載店舗</li>
 </ul>

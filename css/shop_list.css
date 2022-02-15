@@ -15,79 +15,93 @@
 
 .salesList .detail {
   margin: 48px 0 0 0;
-  padding: 24px 20px;
+  padding: 0;
   border-radius: 4px;
   background: #fff;
 }
 
-.salesList .detail ul.shopList li.shopItem {
-  margin: 0 0 16px 0;
-  padding: 0 0 10px 0;
-  border-bottom: 1px solid #ccc;
-  position: relative;
+.salesList .detail table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.salesList .detail ul.shopList li.shopItem:last-child {
-  margin: 0;
-  padding: 0;
-  border-bottom: none;
+.salesList .detail table tbody tr th, .salesList .detail table tbody tr td {
+  display: block;
 }
 
-.salesList .detail ul.shopList li.shopItem .shopTop h4 {
-  text-align: center;
+.salesList .detail table tbody tr th {
+  width: 100%;
+}
+
+.salesList .detail table tbody tr th .title {
   font-size: 12px;
-  font-weight: 500;
   line-height: 1;
   color: #fff;
-  width: 80px;
-  margin: 0 0 6px 0;
-  padding: 2px 6px;
+  padding: 10px;
   background: #3B7C4D;
 }
 
-.salesList .detail ul.shopList li.shopItem .shopTop h3 {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 4px 0;
+.salesList .detail table tbody tr:first-child th .title {
+  border-radius: 4px 4px 0 0;
 }
 
-.salesList .detail ul.shopList li.shopItem .shopTop .page {
+.salesList .detail table tbody tr td .innerTd {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 12px 0;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdTop .page {
   font-size: 12px;
   line-height: 1;
-  padding: 2px 6px;
+  height: 23px;
+  margin: 0 10px 0 0;
+  padding: 4px 8px;
   border: 1px solid #000;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
-.salesList .detail ul.shopList li.shopItem p {
+.salesList .detail table tbody tr td .innerTd .tdTop .name {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom {
   font-size: 13px;
   line-height: 1.5;
 }
 
+.salesList .detail table tbody tr:last-child td .innerTd {
+  border-bottom: none;
+}
+
 @media screen and (min-width: 768px) {
-  .salesList .detail {
-    padding: 56px 72px;
+  .salesList .detail table tbody tr th, .salesList .detail table tbody tr td {
+    display: table-cell;
   }
-  .salesList .detail ul.shopList li.shopItem .shopTop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 0 4px 0;
+  .salesList .detail table tbody tr th {
+    width: 24%;
+    vertical-align: top;
   }
-  .salesList .detail ul.shopList li.shopItem .shopTop h4 {
-    margin: 0 13px 0 0;
+  .salesList .detail table tbody tr th .title {
+    font-size: 16px;
+    padding: 80px 0;
   }
-  .salesList .detail ul.shopList li.shopItem .shopTop h3 {
-    margin: 0;
+  .salesList .detail table tbody tr:first-child th .title {
+    border-radius: 4px 0 0 0;
   }
-  .salesList .detail ul.shopList li.shopItem p {
-    font-size: 13px;
-    line-height: 1.5;
+  .salesList .detail table tbody tr td .innerTd {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    padding: 24px 0;
   }
 }
 
@@ -99,35 +113,20 @@
   .salesList .googleMap iframe {
     height: 450px;
   }
-  .salesList .detail {
-    padding: 80px 104px;
+  .salesList .detail table tbody tr th {
+    width: 200px;
   }
-  .salesList .detail ul.shopList li.shopItem {
-    margin: 0 0 20px 0;
-    padding: 0 0 18px 0;
-  }
-  .salesList .detail ul.shopList li.shopItem .shopTop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 0 10px 0;
-  }
-  .salesList .detail ul.shopList li.shopItem .shopTop h4 {
+  .salesList .detail table tbody tr td .innerTd .tdTop .page {
     font-size: 14px;
-    width: 104px;
-    padding: 4px 8px;
+    height: 24px;
+    margin: 0 20px 0 0;
+    padding: 4px 12px;
   }
-  .salesList .detail ul.shopList li.shopItem .shopTop h3 {
+  .salesList .detail table tbody tr td .innerTd .tdTop .name {
     font-size: 20px;
+    line-height: 1.3;
   }
-  .salesList .detail ul.shopList li.shopItem .shopTop .page {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-  .salesList .detail ul.shopList li.shopItem p {
+  .salesList .detail table tbody tr td .innerTd .tdBottom {
     font-size: 16px;
   }
 }

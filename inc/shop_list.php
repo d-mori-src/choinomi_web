@@ -1,3 +1,22 @@
+<?php
+    foreach (${$shop['keyname'] . '_shops_array'} as $key => & $val) {
+        if ($key > 0 && $val[0] == ${$shop['keyname'] . '_shops_array'}[$key-1][0]) {
+            $num = 0;
+        } else {
+            $num = 1;
+            for ($i = $key + 1; $i < count(${$shop['keyname'] . '_shops_array'}); $i++) {
+                if ($val[0] == ${$shop['keyname'] . '_shops_array'}[$i][0]) {
+                    $num++;
+                } else {
+                    break;
+                }
+            }
+        }
+        array_push($val, $num);
+        }
+    unset($val);
+?>
+
 <ul class="bread">
     <li><a href="/">ホーム</a></li>
     <li><img src="/img/shop/arrow.svg" alt="" width="6" height="3" loading="lazy"></li>
@@ -13,20 +32,33 @@
 <?php endif; ?>
 
 <section class="detail">
-    <ul class="shopList">
-        <?php foreach(${$key . '_shops_array'} as $val): ?>
-            <li class="shopItem">
-                <div class="shopTop">
-                    <h4><?=$val[1];?></h4>
-                    <h3><?=$val[2];?></h3>
-                    <div class="page">P.<?=$val[0];?></div>
-                </div>
-                <p>
-                    <?=$val[3];?><br />
-                    <?=$val[4];?><br class="sp" />
-                    <?=$val[5];?>
-                </p>
-            </li>
-        <?php endforeach; ?>
-    </ul>
+    <table>
+        <tbody>
+            <?php foreach(${$shop['keyname'] . '_shops_array'} as $vals): ?>
+                <tr>
+                    <?php $num = array_pop($vals); ?>
+                    <?php foreach ($vals as $key => $val): ?>
+                        <?php if ($key == 0): ?>
+                            <?php if ($num > 0): ?>
+                                <th rowspan="<?=$num?>"><div class="title"><?=$val?></div></th>
+                            <?php endif;?>
+                        <?php endif;?>
+                    <?php endforeach; ?>
+                    <td>
+                        <div class="innerTd">
+                            <div class="tdTop">
+                                <div class="page">P.<?=$vals[1];?></div>
+                                <div class="name"><?=$vals[2];?></div>
+                            </div>
+                            <div class="tdBottom">
+                                <?=$vals[3];?><br />
+                                <div class="time"><?=$vals[4];?><br />
+                                定休日: <?=$vals[5];?>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 </section>

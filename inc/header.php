@@ -56,7 +56,7 @@
         <div id="sidebarMenu">
             <ul>
                 <li><a href="/"><img src="/img/common/sp-naviHome.svg" alt="ホーム" width="65" height="11" loading="lazy"></a></li>
-                <li><a href="/franchise/"><img src="/img/common/sp-naviAbout.svg" alt="ホーム" width="65" height="11" loading="lazy"></a></li>
+                <li><a href="/franchise/"><img src="/img/common/sp-naviAbout.svg" alt="FC募集" width="65" height="11" loading="lazy"></a></li>
                 <li><a href="/contact/"><img src="/img/common/sp-naviContact.svg" alt="お問い合わせ" width="114" height="15" loading="lazy"></a></li>
             </ul>
         </div>

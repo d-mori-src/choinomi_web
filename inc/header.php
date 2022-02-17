@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="/css/sales_info.css">
     <link rel="stylesheet" href="/css/shop_list.css">
     <link rel="stylesheet" href="/css/franchise.css">
+    <link rel="stylesheet" href="/css/notfound.css">
 </head>
 <body>
     <div class="container">

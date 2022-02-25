@@ -9,13 +9,13 @@
         <?php if ($today <= $shop['book_release']): ?>
         <?php elseif ($today <= $shop['book_release'] || $today <= $shop['book_start']): ?>
             <picture>
-                <source srcset="/img/shop/sp_<?=$key?>_before.svg" media="(max-width: 767px)"/>
-                <img src="/img/shop/pc_<?=$key?>_before.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
+                <source srcset="/img/shop/sp_<?=$shop['vol']?>_<?=$key?>_before.svg" media="(max-width: 767px)"/>
+                <img src="/img/shop/pc_<?=$shop['vol']?>_<?=$key?>_before.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
             </picture>
         <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
             <picture>
-                <source srcset="/img/shop/sp_<?=$key?>_period.svg" media="(max-width: 767px)"/>
-                <img src="/img/shop/pc_<?=$key?>_period.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
+                <source srcset="/img/shop/sp_<?=$shop['vol']?>_<?=$key?>_period.svg" media="(max-width: 767px)"/>
+                <img src="/img/shop/pc_<?=$shop['vol']?>_<?=$key?>_period.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
             </picture>
         <?php endif; ?>
     </div>
@@ -137,7 +137,7 @@
 
         <?php if ($shop['contest_true']): ?>
             <div class="contest">
-                <img src="/img/shop/<?=$key?>_contest.png" class="contestImage" alt="フォトコンテスト結果発表" width="1034" height="1146" loading="lazy" />
+                <img src="/img/shop/<?=$shop['vol']?>_<?=$key?>_contest.png" class="contestImage" alt="フォトコンテスト結果発表" width="1034" height="1146" loading="lazy" />
                 <?php if ($shop['contest_release'] <= $today && $today <= $shop['contest_end']): ?>
                     <p><?=nl2br($shop['contest_lead'])?></p>
                 <?php elseif ($shop['contest_end'] <= $today): ?>

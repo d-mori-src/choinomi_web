@@ -2,6 +2,8 @@
     define('ROOT', './');
     include_once(ROOT.'inc/header.php');
     include_once(ROOT.'resource/news.php');
+    include_once(ROOT.'resource/shops.php');
+    include_once(ROOT.'controller/AppController.php');
 ?>
     <main class="top">
         <section class="hero">
@@ -39,54 +41,71 @@
             <h2 class="secTitle slidein">
                 <img src="/img/top/book_title.svg" class="secTitleImage" alt="書籍一覧" width="110" height="91" loading="lazy" />
             </h2>
-            
+
             <h3 class="slidein">近畿<span>エリア</span></h3>
             <div class="items slidein">
-                <a href="/kobe/" class="item">
-                    <img src="/img/top/kobe.jpg" class="bookImage" alt="ちょい飲み手帖 神戸版" width="269" height="452" loading="lazy" />
-                    <p>神戸版 vol.16</p>
-                    <p class="state active">販売中</p>
-                </a>
-                <a href="/himeji/" class="item">
-                    <img src="/img/top/himeji.jpg" class="bookImage" alt="ちょい飲み手帖 姫路版" width="269" height="452" loading="lazy" />
-                    <p>姫路版 vol.1</p>
-                    <p class="state active">販売中</p>
-                </a>
-                <a href="/osaka/" class="item">
-                    <img src="/img/top/osaka.jpg" class="bookImage" alt="ちょい飲み手帖 大阪版" width="269" height="452" loading="lazy" />
-                    <p>大阪版 vol.1</p>
-                    <p class="state">販売終了</p>
-                </a>
-                <a href="/osaka_kita/" class="item">
-                    <img src="/img/top/osaka_kita.jpg" class="bookImage" alt="ちょい飲み手帖 大阪キタ版" width="269" height="452" loading="lazy" />
-                    <p>大阪キタ版 vol.6</p>
-                    <p class="state">販売終了</p>
-                </a>
-                <a href="/osaka_minami/" class="item">
-                    <img src="/img/top/osaka_minami.jpg" class="bookImage" alt="ちょい飲み手帖 大阪ミナミ版" width="269" height="452" loading="lazy" />
-                    <p>大阪ミナミ版 vol.6</p>
-                    <p class="state">販売終了</p>
-                </a>
-                <a href="/kyoto/" class="item">
-                    <img src="/img/top/default.jpg" class="bookImage" alt="ちょい飲み手帖 京都版" width="269" height="452" loading="lazy" />
-                    <p>京都版 vol.2</p>
-                    <p class="state">発売延期</p>
-                </a>
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '近畿' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
+                            
+                            <?php if ($today <= $shop['book_start']): ?>
+                                <p class="state">販売前</p>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
+                                <p class="state active">販売中</p>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
+                                <p class="state">販売未定</p>
+                            <?php else: ?>
+                                <p class="state">販売終了</p>
+                            <?php endif; ?>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach; ?>
             </div>
 
+            <h3 class="slidein">中国<span>エリア</span></h3>
             <div class="items slidein">
-                <a href="/okayama/" class="item">
-                    <h3>中国<span>エリア</span></h3>
-                    <img src="/img/top/okayama.jpg" class="bookImage" alt="ちょい飲み手帖 岡山版" width="269" height="452" loading="lazy" />
-                    <p>岡山版 vol.2</p>
-                    <p class="state">販売終了</p>
-                </a>
-                <a href="/fukuoka/" class="item">
-                    <h3>九州<span>エリア</span></h3>
-                    <img src="/img/top/fukuoka.jpg" class="bookImage" alt="ちょい飲み手帖 福岡版" width="269" height="452" loading="lazy" />
-                    <p>福岡版 vol.2</p>
-                    <p class="state">販売終了</p>
-                </a>
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '中国' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
+                            
+                            <?php if ($today <= $shop['book_start']): ?>
+                                <p class="state">販売前</p>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
+                                <p class="state active">販売中</p>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
+                                <p class="state">販売未定</p>
+                            <?php else: ?>
+                                <p class="state">販売終了</p>
+                            <?php endif; ?>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+
+            <h3 class="slidein">九州<span>エリア</span></h3>
+            <div class="items slidein">
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '九州' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
+                            
+                            <?php if ($today <= $shop['book_start']): ?>
+                                <p class="state">販売前</p>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
+                                <p class="state active">販売中</p>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
+                                <p class="state">販売未定</p>
+                            <?php else: ?>
+                                <p class="state">販売終了</p>
+                            <?php endif; ?>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach; ?>
             </div>
         </section>
 

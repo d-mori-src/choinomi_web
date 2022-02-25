@@ -13,6 +13,13 @@
   border: none;
 }
 
+.salesList .googleMap p {
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
 .salesList .detail {
   margin: 48px 0 0 0;
   padding: 0;

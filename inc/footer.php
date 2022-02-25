@@ -13,7 +13,9 @@
                 </ul>
                 <ul>
                     <?php foreach ($shops as $key =>  $shop): ?>
-                        <li><a href="/<?=$key?>/"><?=$shop['name']?>版</a></li>
+                        <?php if ($shop['publish'] === true): ?>
+                            <li><a href="/<?=$key?>/"><?=$shop['name']?>版</a></li>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </ul>
                 <p>

@@ -5,7 +5,14 @@
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx as XlsxReader;
     $reader = new XlsxReader();
 
-    $shops_name = ['himeji', 'osaka']; // resourceフォルダ内と名称を合わせること
+    // resourceフォルダ内と名称を合わせること
+    $shops_name = [
+        'kobe_books',
+        'himeji',
+        'osaka', 'osaka_kita', 'osaka_minami', 'kyoto',
+        'okayama',
+        'fukuoka',
+    ];
     
     foreach ($shops_name as $shop_name) {
         // 店舗一覧

@@ -7,11 +7,12 @@
     <div class="cover">
         <img src="/img/top/<?=$shop['cover']?>" class="coverImage" alt="<?=$shop['name']?>版 表紙" width="270" height="454" loading="lazy">
         <?php if ($today <= $shop['book_release']): ?>
+        <?php elseif ($today <= $shop['book_release'] || $today <= $shop['book_start']): ?>
             <picture>
                 <source srcset="/img/shop/sp_<?=$key?>_before.svg" media="(max-width: 767px)"/>
                 <img src="/img/shop/pc_<?=$key?>_before.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
             </picture>
-        <?php elseif ($shop['book_release'] <= $today && $today <= $shop['book_end']): ?>
+        <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
             <picture>
                 <source srcset="/img/shop/sp_<?=$key?>_period.svg" media="(max-width: 767px)"/>
                 <img src="/img/shop/pc_<?=$key?>_period.svg" class="infoIcon" alt="" width="205" height="82" loading="lazy" />
@@ -25,10 +26,12 @@
                 <img src="/img/common/logo.svg" class="logo" alt="ちょい飲み手帖" width="106" height="18" loading="lazy" />
                 <span><?=$shop['name']?>版 vol.<?=$shop['vol']?></span>
             </div>
-            <div class="available">
-                <h3>利用可能期間</h3>
-                <p><?=makeDate('Y年n月j日', $shop['book_start'])?>〜<?=makeDate('Y年n月j日', $shop['book_end'])?></p>
-            </div>
+            <?php if ($shop['book_start'] !== '0000-00-00 00:00:00'): ?>
+                <div class="available">
+                    <h3>利用可能期間</h3>
+                    <p><?=makeDate('Y年n月j日', $shop['book_start'])?>〜<?=makeDate('Y年n月j日', $shop['book_end'])?></p>
+                </div>
+            <?php endif; ?>
             <div class="info">
                 <dl>
                     <dt>利用可能エリア</dt>
@@ -36,7 +39,13 @@
                 </dl>
                 <dl>
                     <dt>発売日</dt>
-                    <dd><?=makeDate('Y年n月j日', $shop['book_start'])?></dd>
+                    <dd>
+                        <?php if ($shop['book_start'] !== '0000-00-00 00:00:00'): ?>
+                            <?=makeDate('Y年n月j日', $shop['book_start'])?>
+                        <?php else: ?>
+                            発売未定
+                        <?php endif; ?>  
+                    </dd>
                 </dl>
                 <dl>
                     <dt>価格</dt>
@@ -53,12 +62,17 @@
                     <img src="/img/shop/arrow_wh.svg" class="btnArrow" alt="" width="6" height="3" loading="lazy" />
                 </a>
 
-                <?php if ($today <= $shop['book_release']): ?>
+                <?php if ($today <= $shop['book_release'] || $today <= $shop['book_start']): ?>
                     <span class="btn orange inactive">
                         <img src="/img/shop/en_icon.svg" class="btnText" alt="購入する" width="55" height="9" loading="lazy" />
                         <img src="/img/shop/arrow_wh.svg" class="btnArrow" alt="" width="6" height="3" loading="lazy" />
                     </span>
-                <?php elseif ($shop['book_release'] <= $today && $today <= $shop['book_end']): ?>
+                <?php elseif ($shop['purchase_url'] === null): ?>
+                    <span class="btn orange inactive">
+                        <img src="/img/shop/en_icon.svg" class="btnText" alt="購入する" width="55" height="9" loading="lazy" />
+                        <img src="/img/shop/arrow_wh.svg" class="btnArrow" alt="" width="6" height="3" loading="lazy" />
+                    </span>
+                <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
                     <a
                         href="<?=$shop['purchase_url']?>"
                         target="_blank" rel="noopener noreferrer" class="btn orange"
@@ -75,7 +89,7 @@
             </div>
         </div>
         
-        <?php if ($shop['sns_true'] === true): ?>
+        <?php if ($shop['questionnaire_true'] === true): ?>
             <a href="#questionnaire" class="questionnaireBanner">
                 <picture>
                     <source srcset="/img/shop/sp_questionnaire.svg" media="(max-width: 767px)"/>
@@ -122,16 +136,14 @@
         <?php endif; ?>
 
         <?php if ($shop['contest_true']): ?>
-            <?php if ($shop['contest_release'] <= $today && $today <= $shop['contest_end']): ?>
-                <div class="contest">
-                    <img src="/img/shop/<?=$key?>_contest.png" class="contestImage" alt="フォトコンテスト結果発表" width="1034" height="1146" loading="lazy" />
+            <div class="contest">
+                <img src="/img/shop/<?=$key?>_contest.png" class="contestImage" alt="フォトコンテスト結果発表" width="1034" height="1146" loading="lazy" />
+                <?php if ($shop['contest_release'] <= $today && $today <= $shop['contest_end']): ?>
                     <p><?=nl2br($shop['contest_lead'])?></p>
-                </div>
-            <?php elseif ($shop['contest_end'] <= $today): ?>
-                <div class="contest">
+                <?php elseif ($shop['contest_end'] <= $today): ?>
                     <p><?=nl2br($shop['contest_endlead'])?></p>
-                </div>
-            <?php endif; ?>
+                <?php endif; ?>
+            </div>
         <?php endif; ?>
 
         <?php if ($shop['questionnaire_true'] === true): ?>
@@ -141,7 +153,7 @@
                     <h2><img src="/img/shop/questionnaire_title.svg" class="secTitleImage" alt="読者アンケート" width="" height="" loading="lazy" /></h2>
                     <h4>アンケート対象<br class="sp" />ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?></h4>
                     <strong>
-                        アンケートにお答えいただいた方の中から抽選で<?=$shop['questionnaire_number']?>名様に「ちょい飲み手帖 姫路版 vol.<?=$shop['vol'] + 1?>」をプレゼント!!<br />
+                        アンケートにお答えいただいた方の中から抽選で<?=$shop['questionnaire_number']?>名様に「ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol'] + 1?>」をプレゼント!!<br />
                         この度は『ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?>』をご購入・ご利用いただき、誠にありがとうございます。今後の改善や継続の為、実際に利用してみた感想やご意見を是非お聞かせください。
                     </strong>
                     <p>

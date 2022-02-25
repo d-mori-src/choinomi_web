@@ -29,6 +29,10 @@
     <section class="googleMap">
         <?=$shop['google_map']?>
     </section>
+<?php else: ?>
+    <section class="googleMap">
+        <p>店舗が登録されていません</p>
+    </section>
 <?php endif; ?>
 
 <section class="detail">

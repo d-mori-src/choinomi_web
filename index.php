@@ -47,7 +47,7 @@
                 <?php foreach ($shops as $key =>  $shop): ?>
                     <?php if ($shop['classification'] === '近畿' && $shop['publish'] === true): ?>
                         <a href="/<?=$key;?>/" class="item">
-                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
                             <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
                             <?php if ($today <= $shop['book_start']): ?>
@@ -69,7 +69,7 @@
                 <?php foreach ($shops as $key =>  $shop): ?>
                     <?php if ($shop['classification'] === '中国' && $shop['publish'] === true): ?>
                         <a href="/<?=$key;?>/" class="item">
-                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
                             <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
                             <?php if ($today <= $shop['book_start']): ?>
@@ -91,7 +91,7 @@
                 <?php foreach ($shops as $key =>  $shop): ?>
                     <?php if ($shop['classification'] === '九州' && $shop['publish'] === true): ?>
                         <a href="/<?=$key;?>/" class="item">
-                            <img src="/img/top/<?=$shop['cover'];?>" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
                             <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
                             <?php if ($today <= $shop['book_start']): ?>

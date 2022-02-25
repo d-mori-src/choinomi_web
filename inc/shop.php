@@ -5,7 +5,7 @@
 </ul>
 <section class="detail">
     <div class="cover">
-        <img src="/img/top/<?=$shop['cover']?>" class="coverImage" alt="<?=$shop['name']?>版 表紙" width="270" height="454" loading="lazy">
+        <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="coverImage" alt="<?=$shop['name']?>版 表紙" width="270" height="454" loading="lazy">
         <?php if ($today <= $shop['book_release']): ?>
         <?php elseif ($today <= $shop['book_release'] || $today <= $shop['book_start']): ?>
             <picture>

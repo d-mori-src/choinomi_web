@@ -20,6 +20,28 @@
   border: 1px solid #000;
 }
 
+.salesList .shopInfo {
+  margin: 48px 0 0 0;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.salesList .shopInfo h3 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0 0 24px 0;
+  padding: 0 0 12px 0;
+  border-bottom: 1px dashed #707070;
+}
+
+.salesList .shopInfo p {
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .salesList .detail {
   margin: 48px 0 0 0;
   padding: 0;
@@ -91,6 +113,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .salesList .shopInfo {
+    padding: 40px;
+  }
   .salesList .detail table tbody tr th, .salesList .detail table tbody tr td {
     display: table-cell;
   }
@@ -119,6 +144,19 @@
   }
   .salesList .googleMap iframe {
     height: 450px;
+  }
+  .salesList .shopInfo {
+    margin: 80px 0 0 0;
+    padding: 80px;
+  }
+  .salesList .shopInfo h3 {
+    font-size: 20px;
+    margin: 0 0 32px 0;
+    padding: 0 0 16px 0;
+  }
+  .salesList .shopInfo p {
+    font-size: 16px;
+    line-height: 1.7;
   }
   .salesList .detail table tbody tr th {
     width: 200px;

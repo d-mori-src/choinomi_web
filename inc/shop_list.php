@@ -35,6 +35,13 @@
     </section>
 <?php endif; ?>
 
+<?php if ($shop['shop_info_true'] === true): ?>
+<section class="shopInfo">
+    <h3>掲載情報変更・臨時休業のお知らせ</h3>
+    <p><?=nl2br($shop['shop_info'])?></p>
+</section>
+<?php endif; ?>
+
 <section class="detail">
     <table>
         <tbody>

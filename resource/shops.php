@@ -25,7 +25,7 @@
 				自治体による外出自粛要請や休業要請により本誌が利用できない状況が1ヶ月以上続く場合には、有効期間を延長するなどの対応を行う場合がございます。延長する際は、利用終了日の1週間前には公式ホームページで告知しますので、お手数ですが各自でご確認くださいますようお願い申し上げます。
 			',
 			'sns_true' => true,
-			'fb_url' => 'https://www.facebook.com/choinomi.himeji/',
+			'fb_url' => 'https://www.facebook.com/choinomi.kobe/',
 			'insta_url' => 'https://www.instagram.com/choinomi_kobe/',
 			'tw_url' => 'https://www.facebook.com/choinomi.kobe/',
 			'line_url' => 'https://page.line.me/yyz9190b',
@@ -63,6 +63,36 @@
 			'questionnaire_end' => '2022-04-03 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/70/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=13DJknhmsGdj5Uh2LWc6lSuo9anfeBLiH&ehbc=2E312F" width="640" height="480"></iframe>',
+			'shop_info_true' => true,
+			'shop_info' => '■ボウルズキッチン(P26)
+				定休日が「日曜」→「不定」に変更となりました
+				
+				■さけやしろ(P38)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+				
+				■ぜ(P66)
+				【酒類提供自粛】まん延防止期間中は、営業時間12:00～20:00（L.O.19:00）に変更し、ソフトドリンクでの対応となります
+				
+				■AQUAN(P67)
+				【酒類提供自粛】まん延防止期間中は、営業時間20:00までに変更し、ソフトドリンクでの対応となります
+				
+				■SILVERGOLD(P70)
+				【酒類提供自粛】まん延防止期間中は、酒類の提供を行っておりません。
+				
+				■なぁむ(P77)
+				定休日が「水・日曜」→「日曜」に変更となりました
+				【臨時休業】1月27日(木)～まん延防止期間
+				
+				■八富士(P78)
+				2/28（月）をもちまして、閉店することとなりました。
+				読者の皆様にはご迷惑をお掛け致しますが、 ご了承下さいますようお願いいたします。
+				
+				■餃子ノ酒場 新開地(P84)
+				業態変更により「ちょい飲み手帖」のご利用は可能ですが、提供メニューの一部が変更になっております。
+				ご利用の際は店舗に確認をお願いいたします。
+				
+				■たこ焼きバーREED(P89)
+				【臨時休業】2/21(月)～まん延防止期間',
 		],
 
 		// 姫路版
@@ -116,6 +146,12 @@
 			'questionnaire_end' => '2022-04-01 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/71/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1s9nrD6Naf2QRrigPNt2N-Hdp21nbBA_X&ehbc=2E312F" width="640" height="480"></iframe>',
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 大阪版
@@ -180,6 +216,12 @@
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=19PNdkqZS0AnSpHO8MgbYluDg1M5GJ-q9&ehbc=2E312F" width="640" height="480"></iframe>',
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 大阪キタ版
@@ -224,6 +266,12 @@
 			'questionnaire_end' => '2020-08-31 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/65/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1hebQUmQq2KkfESGineD0-zZQVRgeBKVT&ehbc=2E312F" width="640" height="480"></iframe>',
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 大阪ミナミ版
@@ -275,6 +323,12 @@
 			'questionnaire_end' => '2020-09-30 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/66/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1i8_UzxZ0k8jaUxTa2WnfK1kFl_BJZVe6&ehbc=2E312F" width="640" height="480"></iframe>',
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 京都版
@@ -313,6 +367,12 @@
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,
 			'google_map' => null,
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 岡山版
@@ -393,6 +453,12 @@
 			'questionnaire_end' => '2021-08-15 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/68/',
 			'google_map' => '',
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 
 		// 福岡版
@@ -430,5 +496,11 @@
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,
 			'google_map' => null,
+			'shop_info_true' => false,
+			'shop_info' => '■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります
+
+				■店名(P00)
+				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         ],
 	];

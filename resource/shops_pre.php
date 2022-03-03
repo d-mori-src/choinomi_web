@@ -64,9 +64,6 @@
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=18C3-GgT6LUEVattOjoaoi7raHayhX3Cx&ehbc=2E312F" width="640" height="480"></iframe>',
 			'shop_info_true' => true,
 			'shop_info' => '■店名(P00)
-				【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-				■店名(P00)
 				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
 		],
 
@@ -193,9 +190,6 @@
 		// 	'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=19PNdkqZS0AnSpHO8MgbYluDg1M5GJ-q9&ehbc=2E312F" width="640" height="480"></iframe>',
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 
@@ -243,9 +237,6 @@
 		// 	'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1hebQUmQq2KkfESGineD0-zZQVRgeBKVT&ehbc=2E312F" width="640" height="480"></iframe>',
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 
@@ -300,9 +291,6 @@
 		// 	'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=1i8_UzxZ0k8jaUxTa2WnfK1kFl_BJZVe6&ehbc=2E312F" width="640" height="480"></iframe>',
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 
@@ -344,9 +332,6 @@
 		// 	'google_map' => null,
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 
@@ -430,9 +415,6 @@
 		// 	'google_map' => '',
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 
@@ -473,9 +455,6 @@
 		// 	'google_map' => null,
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
-		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります
-
-		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
         // ],
 	];

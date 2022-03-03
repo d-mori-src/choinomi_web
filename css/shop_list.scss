@@ -104,6 +104,25 @@
                                 }
                                 .new { background: #B9222A; }
                                 .revival { background: #3B7C4D; }
+                                .extension {
+                                    span {
+                                        font-weight: bold;
+                                        color: #B9222A;
+                                    }
+                                    .calenderImage {
+                                        width: 16px;
+                                        height: auto;
+                                        position: relative;
+                                        top: 2px;
+                                    }
+                                }
+                                .close { color: #B9222A; }
+                                .info {
+                                    margin: 12px 0 0 0;
+                                    padding: 12px;
+                                    border-radius: 4px;
+                                    background: #F5EDEE;
+                                }
                             }
                         }
                     }
@@ -204,6 +223,9 @@
                                     .tag {
                                         font-size: 13px;
                                         padding: 4px 8px;
+                                    }
+                                    .info {
+                                        padding: 16px 24px;
                                     }
                                 }
                             }

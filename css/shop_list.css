@@ -129,6 +129,29 @@
   background: #3B7C4D;
 }
 
+.salesList .detail table tbody tr td .innerTd .tdBottom .extension span {
+  font-weight: bold;
+  color: #B9222A;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .extension .calenderImage {
+  width: 16px;
+  height: auto;
+  position: relative;
+  top: 2px;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .close {
+  color: #B9222A;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .info {
+  margin: 12px 0 0 0;
+  padding: 12px;
+  border-radius: 4px;
+  background: #F5EDEE;
+}
+
 .salesList .detail table tbody tr:last-child td .innerTd {
   border-bottom: none;
 }
@@ -198,6 +221,9 @@
   .salesList .detail table tbody tr td .innerTd .tdBottom .tag {
     font-size: 13px;
     padding: 4px 8px;
+  }
+  .salesList .detail table tbody tr td .innerTd .tdBottom .info {
+    padding: 16px 24px;
   }
 }
 /*# sourceMappingURL=shop_list.css.map */

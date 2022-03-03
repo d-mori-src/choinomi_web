@@ -19,7 +19,7 @@
         ${$shop_name . '_shops' } = $reader->load('../resource/' .$shop_name. '/shop_list.xlsx');
         ${$shop_name . '_shops_sheet'} = ${$shop_name . '_shops' }->getSheetByName('shop_list');
         ${$shop_name . '_shops_max_row'} = ${$shop_name . '_shops_sheet'} -> getHighestRow();
-        ${$shop_name . '_shops_maxCellAddress'} = 'G' . ${$shop_name . '_shops_max_row'}; // 横はF列まで
+        ${$shop_name . '_shops_maxCellAddress'} = 'J' . ${$shop_name . '_shops_max_row'}; // 横はF列まで
         ${$shop_name . '_shops_array'} = ${$shop_name . '_shops_sheet'} -> rangeToArray('A2:' . ${$shop_name . '_shops_maxCellAddress'});
         // 書店一覧
         ${$shop_name . '_sales'} = $reader->load('../resource/' .$shop_name. '/sales_info.xlsx');

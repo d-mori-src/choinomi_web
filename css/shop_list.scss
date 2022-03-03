@@ -90,6 +90,20 @@
                             .tdBottom {
                                 font-size: 13px;
                                 line-height: 1.5;
+                                position: relative;
+                                .tag {
+                                    text-align: center;
+                                    font-size: 11px;
+                                    line-height: 1;
+                                    color: #fff;
+                                    padding: 3px 8px;
+                                    background: #ccc;
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                }
+                                .new { background: #B9222A; }
+                                .revival { background: #3B7C4D; }
                             }
                         }
                     }
@@ -187,6 +201,10 @@
                                 }
                                 .tdBottom {
                                     font-size: 16px;
+                                    .tag {
+                                        font-size: 13px;
+                                        padding: 4px 8px;
+                                    }
                                 }
                             }
                         }

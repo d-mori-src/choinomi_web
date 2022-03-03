@@ -63,8 +63,14 @@
                             </div>
                             <div class="tdBottom">
                                 <?=$vals[3];?><br />
-                                <div class="time"><?=$vals[4];?><br />
-                                定休日: <?=$vals[5];?>
+                                <div class="time"><?=$vals[5];?><br />
+                                定休日: <?=$vals[6];?>
+
+                                <?php if ($vals[4] == 'NEW'): ?>
+                                    <div class="tag new"><?=$vals[4];?></div>
+                                <?php elseif ($vals[4] == '復活'): ?>
+                                    <div class="tag revival"><?=$vals[4];?></div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </td>

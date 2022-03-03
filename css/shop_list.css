@@ -106,6 +106,27 @@
 .salesList .detail table tbody tr td .innerTd .tdBottom {
   font-size: 13px;
   line-height: 1.5;
+  position: relative;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .tag {
+  text-align: center;
+  font-size: 11px;
+  line-height: 1;
+  color: #fff;
+  padding: 3px 8px;
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .new {
+  background: #B9222A;
+}
+
+.salesList .detail table tbody tr td .innerTd .tdBottom .revival {
+  background: #3B7C4D;
 }
 
 .salesList .detail table tbody tr:last-child td .innerTd {
@@ -173,6 +194,10 @@
   }
   .salesList .detail table tbody tr td .innerTd .tdBottom {
     font-size: 16px;
+  }
+  .salesList .detail table tbody tr td .innerTd .tdBottom .tag {
+    font-size: 13px;
+    padding: 4px 8px;
   }
 }
 /*# sourceMappingURL=shop_list.css.map */

@@ -117,14 +117,16 @@
 
             <ul class="items slidein">
                 <?php foreach ($newsList as $newsItem): ?>
-                <li class="item">
-                    <h4><?=$newsItem['release_date']?></h4>
-                    <?php if ($newsItem['url'] !== ''): ?>
-                        <a href="<?=$newsItem['url']?>"><?=$newsItem['lead']?></a>
-                    <?php else: ?>
-                        <p><?=$newsItem['lead']?></p> 
+                    <?php if ($newsItem['news_true'] == true): ?>
+                        <li class="item">
+                            <h4><?=$newsItem['release_date']?></h4>
+                            <?php if ($newsItem['url'] !== ''): ?>
+                                <a href="<?=$newsItem['url']?>"><?=$newsItem['lead']?></a>
+                            <?php else: ?>
+                                <p><?=$newsItem['lead']?></p> 
+                            <?php endif; ?>
+                        </li>
                     <?php endif; ?>
-                </li>
                 <?php endforeach; ?>
             </ul>
             <div class="more">もっとみる<span><img src="/img/top/down_arrow.svg" class="arrowImage" alt="" width="9" height="5" loading="lazy" /></span></div>

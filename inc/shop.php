@@ -91,7 +91,7 @@
 
         <?php if ($shop['web_url_true'] === true): ?>
             <a href="<?=$shop['web_url']?>" class="webMagagineBanner" target="_blank" rel="noopener noreferrer">
-                <img src="/img/shop/choinomi_web.jpg" class="bannerImage" alt="ちょい飲み手帖　WEBマガジン" width="557" height="118" loading="lazy" />
+                <img src="/img/shop/choinomi_web_<?=$key?>.jpg" class="bannerImage" alt="ちょい飲み手帖　WEBマガジン" width="557" height="118" loading="lazy" />
             </a>
         <?php endif; ?>
         

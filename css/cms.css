@@ -3,6 +3,53 @@
   width: calc(100% - 80px);
 }
 
+.cms form dl {
+  margin: 0 0 20px 0;
+}
+
+.cms form dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.cms form dl dd input[type="text"],
+.cms form dl dd textarea {
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  padding: 16px 24px;
+  background: #fff;
+  border: none;
+}
+
+.cms form dl dd textarea {
+  resize: vertical;
+  height: 400px;
+}
+
+.cms form dl dd .imgPreview {
+  width: 200px;
+  margin: 12px auto 32px;
+}
+
+.cms form dl dd .imgPreview img {
+  width: 100%;
+  height: auto;
+}
+
+.cms form input[type="submit"] {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  border: none;
+  background: #B9222A;
+}
+
 @media screen and (min-width: 1024px) {
   .cms {
     margin: 100px auto;

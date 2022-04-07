@@ -10,7 +10,7 @@
 			'area' => 'サシ飲み特集・三宮・元町・神戸・BAR',
 			'book_release' => '2021-11-15 00:00:00',
 			'book_start' => '2021-11-26 00:00:00',
-			'book_end' => '2022-03-24 00:00:00',
+			'book_end' => '2022-04-21 00:00:00',
 			'plice' => '1,100円（税込）',
 			'purchase_url' => 'https://www.amazon.co.jp/dp/B09LGPMVJ2/ref=cm_sw_em_r_mt_dp_HPTV66FRT893QDBC7H9H?_encoding=UTF8&psc=1',
 			'lead' => '三宮、元町、神戸のお得な「ちょい飲みセット」を集めたグルメ本の第16弾!
@@ -21,8 +21,16 @@
 				本誌を利用する際は、お通し代やチャージ料が一切発生いたしません。
 				『ちょい飲み手帖』でお得なちょい飲み始めてみませんか？
 				
-				<span style="color: red;"><B>≪ 外出自粛要請や休業要請による本書の対応について ≫</B></span>
-				自治体による外出自粛要請や休業要請により本誌が利用できない状況が1ヶ月以上続く場合には、有効期間を延長するなどの対応を行う場合がございます。延長する際は、利用終了日の1週間前には公式ホームページで告知しますので、お手数ですが各自でご確認くださいますようお願い申し上げます。
+				<span style="color: red;"><B>≪ vol.16 利用期間延長のお知らせ ≫</B></span>
+				「まん延防止等重点措置」により営業時間が短縮になり、また一部掲載店にてお酒の提供自粛や休業などで本誌の利用に制限かかかる期間が続いたため、vol.16の利用期間を延長させていただくこととなりました。
+
+				[本来の有効期限] 2022年3月24日（木）
+				　  ↓
+				[延長後の有効期限] ～2022年4月21日（木）まで
+
+				延長可能な店舗や提供時間に関しては、現在掲載店に確認をとっております。
+				掲載店舗ページに最新情報を掲載していきますので、ご利用の前にご確認をお願いいたします(一部提供を終了しているお店もございます)。
+				お店では、店頭や店内に延長POPの掲示をお願いしていきます。本誌持参のうえ、引き続きお得な「ちょい飲み」をお楽しみください。
 			',
 			'sns_true' => true,
 			'fb_url' => 'https://www.facebook.com/choinomi.kobe/',
@@ -59,6 +67,7 @@
 			',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '5',
+			'questionnaire_present' => 'ちょい飲み手帖 神戸版 vol.17',
 			'questionnaire_start' => '2021-11-26 00:00:00',
 			'questionnaire_end' => '2022-04-03 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/70/',
@@ -67,32 +76,8 @@
 			'shop_info' => '■ボウルズキッチン(P26)
 			定休日が「日曜」→「不定」に変更となりました
 			
-			■さけやしろ(P38)
-			【営業時間変更】まん延防止期間中は、週末のみの営業になります
-			
-			■ぜ(P66)
-			【酒類提供自粛】まん延防止期間中は、営業時間12:00～20:00（L.O.19:00）に変更し、ソフトドリンクでの対応となります
-			
-			■AQUAN(P67)
-			【酒類提供自粛】まん延防止期間中は、営業時間20:00までに変更し、ソフトドリンクでの対応となります
-			
-			■SILVERGOLD(P70)
-			【酒類提供自粛】まん延防止期間中は、酒類の提供を行っておりません。
-			
 			■なぁむ(P77)
-			定休日が「水・日曜」→「日曜」に変更となりました
-			【臨時休業】1月27日(木)～まん延防止期間
-			
-			■八富士(P78)
-			2/28（月）をもちまして、閉店することとなりました。
-			読者の皆様にはご迷惑をお掛け致しますが、 ご了承下さいますようお願いいたします。
-			
-			■餃子ノ酒場 新開地(P84)
-			業態変更により「ちょい飲み手帖」のご利用は可能ですが、提供メニューの一部が変更になっております。
-			ご利用の際は店舗に確認をお願いいたします。
-			
-			■たこ焼きバーREED(P89)
-			【臨時休業】2/21(月)～まん延防止期間',
+			定休日が「水・日曜」→「日曜」に変更となりました',
 		],
 
 		// 姫路版
@@ -105,7 +90,7 @@
 			'area' => '駅東・駅西・駅南',
 			'book_release' => '2021-11-20 00:00:00',
 			'book_start' => '2021-11-26 00:00:00',
-			'book_end' => '2022-03-24 00:00:00',
+			'book_end' => '2022-04-21 00:00:00',
 			'plice' => '1,100円（税込）',
 			'purchase_url' => 'https://www.amazon.co.jp/dp/B09LGNR5NT/ref=cm_sw_em_r_mt_dp_G0KYCVDG845VSWD1S8P4',
 			'lead' => '
@@ -128,6 +113,17 @@
 				
 				■ 焼鳥・ホルモン串5本+ハイボール(大)・チューハイ（大）各種から3杯
 				通常1,482～1,892円→1,000円（税込）
+
+				<span style="color: red;"><B>≪ vol.1 利用期間延長のお知らせ ≫</B></span>
+				「まん延防止等重点措置」により営業時間が短縮になり、また一部掲載店にてお酒の提供自粛や休業などで本誌の利用に制限かかかる期間が続いたため、vol.1の利用期間を延長させていただくこととなりました。
+
+				[本来の有効期限] 2022年3月24日（木）
+				　 ↓
+				[延長後の有効期限] ～2022年4月21日（木）まで
+
+				延長可能な店舗や提供時間に関しては、現在掲載店に確認をとっております。
+				掲載店舗ページに最新情報を掲載していきますので、ご利用の前にご確認をお願いいたします(一部提供を終了しているお店もございます)。
+				お店では、店頭や店内に延長POPの掲示をお願いしていきます。本誌持参のうえ、引き続きお得な「ちょい飲み」をお楽しみください。
 			',
 			'sns_true' => true,
 			'fb_url' => 'https://www.facebook.com/choinomi.himeji/',
@@ -142,6 +138,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '5',
+			'questionnaire_present' => 'ちょい飲み手帖 姫路版 vol.2',
 			'questionnaire_start' => '2021-12-07 00:00:00',
 			'questionnaire_end' => '2022-04-01 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/71/',
@@ -210,6 +207,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => false,
 			'questionnaire_number' => '',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '0000-00-00 00:00:00',
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,
@@ -290,6 +288,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '2020-06-02 00:00:00',
 			'questionnaire_end' => '2020-08-31 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/65/',
@@ -381,6 +380,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '2020-06-02 00:00:00',
 			'questionnaire_end' => '2020-09-30 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/66/',
@@ -483,6 +483,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => false,
 			'questionnaire_number' => '',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '0000-00-00 00:00:00',
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,
@@ -569,6 +570,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '5',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '2021-03-01 00:00:00',
 			'questionnaire_end' => '2021-08-15 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/68/',
@@ -612,6 +614,7 @@
 			'contest_endlead' => '',
 			'questionnaire_true' => false,
 			'questionnaire_number' => '',
+			'questionnaire_present' => '',
 			'questionnaire_start' => '0000-00-00 00:00:00',
 			'questionnaire_end' => '0000-00-00 00:00:00',
 			'questionnaire_url' => null,

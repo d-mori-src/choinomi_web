@@ -65,16 +65,21 @@
                                 <?=$vals[3];?><br />
                                 <div class="time"><?=$vals[5];?><br />
                                 定休日: <?=$vals[6];?><br />
-                                <?php if ($vals[7] !== 'なし'): ?>
+                                <?php if ($vals[7] === '利用期間は終了しました。'): ?>
                                     <div class="extension">
                                         <img src="/img/shop/calendar.svg" class="calenderImage" alt="利用期限延長" width="47" height="60" loading="lazy" />
-                                        <span><?=$vals[7];?></span>まで提供可能です。
+                                        <span><?=$vals[7];?></span>
+                                    </div>
+                                <?php elseif ($vals[7] !== 'なし'): ?>
+                                    <div class="extension">
+                                        <img src="/img/shop/calendar.svg" class="calenderImage" alt="利用期限延長" width="47" height="60" loading="lazy" />
+                                        <span><?=$vals[7];?></span>まで期間延長可能です。
                                     </div>
                                 <?php endif; ?>
                                 <?php if ($vals[8] !== 'なし'): ?>
                                     <div class="close"><?=$vals[8];?></div>
                                 <?php endif; ?>
-                                <?php if ($vals[8] !== 'なし'): ?>
+                                <?php if ($vals[9] !== 'なし'): ?>
                                     <div class="info"><?=nl2br($vals[9]);?></div>
                                 <?php endif; ?>
 

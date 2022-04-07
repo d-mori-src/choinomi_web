@@ -90,12 +90,14 @@
         </div>
         
         <?php if ($shop['questionnaire_true'] === true): ?>
-            <a href="#questionnaire" class="questionnaireBanner">
-                <picture>
-                    <source srcset="/img/shop/sp_questionnaire.svg" media="(max-width: 767px)"/>
-                    <img src="/img/shop/pc_questionnaire.svg" class="bannerImage" alt="読者アンケート実施中" width="557" height="118" loading="lazy" />
-                </picture>
-            </a>
+            <?php if ($shop['questionnaire_start'] <= $today && $today <= $shop['questionnaire_end']): ?>
+                <a href="#questionnaire" class="questionnaireBanner">
+                    <picture>
+                        <source srcset="/img/shop/sp_questionnaire.svg" media="(max-width: 767px)"/>
+                        <img src="/img/shop/pc_questionnaire.svg" class="bannerImage" alt="読者アンケート実施中" width="557" height="118" loading="lazy" />
+                    </picture>
+                </a>
+            <?php endif; ?>
         <?php endif; ?>
 
         <div class="lead">
@@ -151,9 +153,9 @@
             <?php if ($shop['questionnaire_start'] <= $today && $today <= $shop['questionnaire_end']): ?>
                 <div class="questionnaire">
                     <h2><img src="/img/shop/questionnaire_title.svg" class="secTitleImage" alt="読者アンケート" width="" height="" loading="lazy" /></h2>
-                    <h4>アンケート対象<br class="sp" />ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?></h4>
+                    <h4>アンケート対象<br class="sp" /><?=$shop['questionnaire_present']?></h4>
                     <strong>
-                        アンケートにお答えいただいた方の中から抽選で<?=$shop['questionnaire_number']?>名様に「ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol'] + 1?>」をプレゼント!!<br />
+                        アンケートにお答えいただいた方の中から抽選で<?=$shop['questionnaire_number']?>名様に「<?=$shop['questionnaire_present']?>」をプレゼント!!<br />
                         この度は『ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?>』をご購入・ご利用いただき、誠にありがとうございます。今後の改善や継続の為、実際に利用してみた感想やご意見を是非お聞かせください。
                     </strong>
                     <p>

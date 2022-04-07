@@ -9,7 +9,7 @@
                 <ul>
                     <li><a href="/">ホーム</a></li>
                     <li><a href="/franchise/">ちょい飲み手帖とは</a></li>
-                    <li><a href="/contact/">お問い合わせ</a></li>
+                    <li><a href="https://choinomi.jp/contact/">お問い合わせ</a></li>
                 </ul>
                 <ul>
                     <?php foreach ($shops as $key =>  $shop): ?>

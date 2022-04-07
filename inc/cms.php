@@ -144,17 +144,13 @@
                     <dd>
                         <input type="file" name="cover">
                         <input type="hidden" name="re_cover" value="<?=$re_cover_check = !empty($val[4]) ? $val[4] : '';?>">
-                    </dd>
-                </dl>
-                 
-                <dl>
-                    <dt>表紙プレビュー</dt>
-                    <dd>
-                        <?php if (!empty($val[4])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[4];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
+                        <div class="imgPreview">
+                            <?php if (!empty($val[4])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[4];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>                       
                     </dd>
                 </dl>
                 
@@ -300,7 +296,7 @@
                 </dl>
                 <dl>
                     <dt>アンケートプレゼント数</dt>
-                    <dd><input type="text" name="questionnaire_number" placeholder="アンケートプレゼント数" value="<?=$questionnaire_number_check = !empty($val[26]) ? $val[26] : '';?>">個</dd>
+                    <dd><input type="text" name="questionnaire_number" placeholder="アンケートプレゼント数" value="<?=$questionnaire_number_check = !empty($val[26]) ? $val[26] : '';?>"></dd>
                 </dl>
                 <dl>
                     <dt>アンケート開始日</dt>
@@ -346,6 +342,13 @@
                     <dd>
                         <input type="file" name="sp_before">
                         <input type="hidden" name="re_sp_before" value="<?=$re_sp_before_check = !empty($val[33]) ? $val[33] : '';?>">
+                        <div class="imgPreview">
+                            <?php if (!empty($val[33])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[33];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
                     </dd>
                 </dl>
                 <dl>
@@ -353,21 +356,13 @@
                     <dd>
                         <input type="file" name="pc_before">
                         <input type="hidden" name="re_pc_before" value="<?=$re_pc_before_check = !empty($val[34]) ? $val[34] : '';?>">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>発売前告知プレビュー</dt>
-                    <dd>
-                        <?php if (!empty($val[33])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[33];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
-                        <?php if (!empty($val[34])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[34];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
+                        <div class="imgPreview">
+                            <?php if (!empty($val[34])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[34];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
                     </dd>
                 </dl>
                 
@@ -376,6 +371,13 @@
                     <dd>
                         <input type="file" name="sp_period">
                         <input type="hidden" name="re_sp_period" value="<?=$re_sp_period_check = !empty($val[35]) ? $val[35] : '';?>">
+                        <div class="imgPreview">
+                            <?php if (!empty($val[35])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[35];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
                     </dd>
                 </dl>
                 <dl>
@@ -383,21 +385,13 @@
                     <dd>
                         <input type="file" name="pc_period">
                         <input type="hidden" name="re_pc_period" value="<?=$re_pc_period_check = !empty($val[36]) ? $val[36] : '';?>">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>発売中告知プレビュー</dt>
-                    <dd>
-                        <?php if (!empty($val[35])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[35];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
-                        <?php if (!empty($val[36])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[36];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
+                        <div class="imgPreview">
+                            <?php if (!empty($val[36])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[36];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
                     </dd>
                 </dl>
 
@@ -406,16 +400,13 @@
                     <dd>
                         <input type="file" name="contest">
                         <input type="hidden" name="re_contest" value="<?=$re_contest_check = !empty($val[37]) ? $val[37] : '';?>">
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテスト画像プレビュー</dt>
-                    <dd>
-                        <?php if (!empty($val[37])): ?> 
-                            <img src="/storage/<?=$val[0];?>/<?=$val[37];?>" alt="">
-                        <?php else: ?>
-                            画像がアップロードされていません
-                        <?php endif; ?>
+                        <div class="imgPreview">
+                            <?php if (!empty($val[37])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[37];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
                     </dd>
                 </dl>
                 
@@ -428,7 +419,7 @@
                         <label for="private">非公開リスト更新</label>
                     </dd>
                 </dl>
-                <input type="submit" value="submit">
+                <input type="submit" value="データを更新する">
             <?php endforeach; ?>
         </form>
     </main>

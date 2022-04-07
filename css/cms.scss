@@ -1,6 +1,51 @@
 .cms {
     margin: 70px auto;
     width: calc(100% - 80px);
+    form {
+        dl {
+            margin: 0 0 20px 0;
+            dt {
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0 0 8px 0;
+            }
+            dd {
+                input[type="text"],
+                textarea {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    width: 100%;
+                    padding: 16px 24px;
+                    background: #fff;
+                    border: none;
+                }
+                textarea {
+                    resize: vertical;
+                    height: 400px;
+                }
+                .imgPreview {
+                    width: 200px;
+                    margin: 12px auto 32px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        input[type="submit"] {
+            display: block;
+            font-size: 14px;
+            line-height: 1;
+            color: #fff;
+            width: 100%;
+            margin: 0 auto;
+            padding: 16px;
+            border: none;
+            background: #B9222A;
+        }
+    }
+
     
     @media screen and (min-width:768px) {
 

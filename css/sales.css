@@ -136,6 +136,16 @@
   opacity: .3;
 }
 
+.sales .detail .medium .webMagagineBanner {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.sales .detail .medium .webMagagineBanner .bannerImage {
+  width: 100%;
+  height: auto;
+}
+
 .sales .detail .medium .questionnaireBanner {
   display: block;
   margin: 0 0 40px 0;
@@ -377,6 +387,9 @@
   .sales .detail .medium .bookInfo .btnWrap .btn .btnArrow {
     width: 5px;
     right: 12px;
+  }
+  .sales .detail .medium .webMagagineBanner {
+    margin: 0 0 40px 0;
   }
   .sales .detail .medium .questionnaireBanner {
     margin: 0 0 80px 0;

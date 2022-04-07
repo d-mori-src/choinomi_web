@@ -9,7 +9,7 @@
 			'keyname' => 'kobe_books',
 			'classification' => '近畿',
 			'area' => '三宮・元町・神戸・BAR',
-			'book_release' => '2022-03-02 00:00:00',
+			'book_release' => '2022-04-07 00:00:00',
 			'book_start' => '2022-04-22 00:00:00',
 			'book_end' => '2022-08-25 00:00:00',
 			'plice' => '1,100円（税込）',
@@ -29,23 +29,23 @@
 			'tw_url' => 'https://www.facebook.com/choinomi.kobe/',
 			'line_url' => 'https://page.line.me/yyz9190b',
 			'contest_true' => true,
-			'contest_release' => '2021-11-15 00:00:00',
-			'contest_start' => '2021-11-26 00:00:00',
-			'contest_end' => '2022-03-24 00:00:00',
+			'contest_release' => '2022-04-07 00:00:00',
+			'contest_start' => '2022-04-22 00:00:00',
+			'contest_end' => '2022-08-25 00:00:00',
 			'contest_lead' => '■応募期間
-				2022年00月00日〜2022年00月00日
-			
+				2022年4月22日〜2022年8月25日
+				
 				■応募方法
 				①ちょい飲み公式アカウント「@choinomi_kobe」をフォロー
 				②ちょい飲み手帖 神戸版vol.17の掲載メニューと当該の本書を一緒に撮影
 				③ハッシュタグ「#ちょい飲み手帖神戸版 」をつけてインスタグラムに投稿
 				
 				■キャンペーン内容
-				写真を投稿してくれた人の中から5名様の投稿写真を「ちょい飲み手帖vol.18」に掲載させて頂きます。
-				さらにその中でグランプリとして1名様に「ちょい飲み手帖vol.18」を1冊プレゼント!
+				写真を投稿してくれた人の中から3名様に「500円分の図書券」をプレゼント!
+				さらに、その投稿写真を「ちょい飲み手帖vol.18」に掲載させて頂きます。
 				
 				■当選について
-				0/00〜00/00の間で当選者の方のみにご連絡いたします。
+				8/26～9/6の間で当選者の方のみにご連絡いたします。
 				ちょい飲み手帖の公式アカウントよりInstagramダイレクトメッセージにて
 				個別にご連絡いたします。メッセージ配信後、3日以内にご返信が無い場合は
 				当選を無効とさせて頂きますのでご注意ください。			
@@ -54,18 +54,19 @@
 				たくさんのご応募ありがとうございます。
 
 				■当選について
-				0/00〜00/00の間でに当選者の方のみにご連絡いたします。ちょい飲み手帖の公式アカウントよりInstagramダイレクトメッセージにて個別にご連絡いたします。メッセージ配信後、3日以内にご返信が無い場合は当選を無効とさせて頂きますのでご注意ください。			
+				8/26～9/6の間でに当選者の方のみにご連絡いたします。ちょい飲み手帖の公式アカウントよりInstagramダイレクトメッセージにて個別にご連絡いたします。メッセージ配信後、3日以内にご返信が無い場合は当選を無効とさせて頂きますのでご注意ください。			
 			',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '5',
 			'questionnaire_present' => 'ちょい飲み手帖 神戸版 vol.17',
-			'questionnaire_start' => '2022-03-02 00:00:00',
-			'questionnaire_end' => '2022-08-25 00:00:00',
+			'questionnaire_start' => '2022-04-07 00:00:00',
+			'questionnaire_end' => '2022-08-31 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/72/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=18C3-GgT6LUEVattOjoaoi7raHayhX3Cx&ehbc=2E312F" width="640" height="480"></iframe>',
 			'shop_info_true' => true,
-			'shop_info' => '■店名(P00)
-				【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+			'shop_info' => '',
+			'web_url_true' => true,
+			'web_url' => 'https://choinomi.jp/kobe/',
 		],
 
 		// 姫路版
@@ -126,6 +127,8 @@
 
 		// 	■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 大阪版
@@ -194,6 +197,8 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 大阪キタ版
@@ -242,6 +247,8 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 大阪ミナミ版
@@ -297,6 +304,8 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 京都版
@@ -339,6 +348,8 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 岡山版
@@ -423,6 +434,8 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 
 		// 福岡版
@@ -464,5 +477,7 @@
 		// 	'shop_info_true' => false,
 		// 	'shop_info' => '■店名(P00)
 		// 	【営業時間変更】まん延防止期間中は、週末のみの営業になります',
+		// 'web_url_true' => false,
+		// 'web_url' => '',
         // ],
 	];

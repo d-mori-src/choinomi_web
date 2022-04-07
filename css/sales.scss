@@ -104,6 +104,14 @@
                     }
                 }
             }
+            .webMagagineBanner {
+                display: block;
+                margin: 0 0 20px 0;
+                .bannerImage {
+                    width: 100%;
+                    height: auto;
+                }
+            }
             .questionnaireBanner {
                 display: block;
                 margin: 0 0 40px 0;
@@ -317,6 +325,9 @@
                             }
                         }
                     }
+                }
+                .webMagagineBanner {
+                    margin: 0 0 40px 0;
                 }
                 .questionnaireBanner {
                     margin: 0 0 80px 0;

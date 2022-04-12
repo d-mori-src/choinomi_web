@@ -88,6 +88,12 @@
                 <?php endif; ?>
             </div>
         </div>
+
+        <?php if ($value[39] === 'TRUE'): ?>
+            <a href="<?=$value[40]?>" class="webMagagineBanner" target="_blank" rel="noopener noreferrer">
+                <img src="/storage/<?=$value[0]?>/<?=$value[41]?>" class="bannerImage" alt="ちょい飲み手帖　WEBマガジン" width="557" height="118" loading="lazy" />
+            </a>
+        <?php endif; ?>
         
         <?php if ($value[25] === 'TRUE'): ?>
             <a href="#questionnaire" class="questionnaireBanner">
@@ -153,7 +159,7 @@
                     <h2><img src="/img/shop/questionnaire_title.svg" class="secTitleImage" alt="読者アンケート" width="" height="" loading="lazy" /></h2>
                     <h4>アンケート対象<br class="sp" />ちょい飲み手帖 <?=$value[3]?>版 vol.<?=$value[1]?></h4>
                     <strong>
-                        アンケートにお答えいただいた方の中から抽選で<?=$value[26]?>名様に「ちょい飲み手帖 <?=$value[3]?>版 vol.<?=$value[1] + 1?>」をプレゼント!!<br />
+                        アンケートにお答えいただいた方の中から抽選で<?=$value[26]?>名様に「<?=$value[38]?>」をプレゼント!!<br />
                         この度は『ちょい飲み手帖 <?=$value[3]?>版 vol.<?=$value[1]?>』をご購入・ご利用いただき、誠にありがとうございます。今後の改善や継続の為、実際に利用してみた感想やご意見を是非お聞かせください。
                     </strong>
                     <p>

@@ -35,7 +35,9 @@
         $google_map = $_POST['google_map'];
         $shop_info_true = $_POST['shop_info_true'];
         $shop_info = $_POST['shop_info'];
-        
+        $questionnaire_present = $_POST['questionnaire_present'];
+        $web_url_true = $_POST['web_url_true'];
+        $web_url = $_POST['web_url'];
         
         // 画像関係
         // 表紙
@@ -92,6 +94,15 @@
         } else {
             $contest = $_POST['re_contest'];
         }
+        // ちょい飲みWEB
+        if ($_FILES['web_banner']['size'] > 0) {
+            $web_banner = uniqid(mt_rand(), true); //ファイル名をユニーク化
+            $web_banner .= '.' . substr(strrchr($_FILES['web_banner']['name'], '.'), 1);
+            $web_banner_path = '../storage/'.$key.'/'.$web_banner;
+            $result = move_uploaded_file($_FILES['web_banner']['tmp_name'], $web_banner_path);
+        } else {
+            $web_banner = $_POST['re_web_banner'];
+        }
 
         if ($publish == 'true') {
             $sheet_name = 'publish';
@@ -114,7 +125,8 @@
                 $sns_true, $fb_url, $insta_url, $tw_url, $line_url,
                 $contest_true, $contest_release, $contest_start, $contest_end, $contest_lead, $contest_endlead,
                 $questionnaire_true, $questionnaire_number, $questionnaire_start, $questionnaire_end, $questionnaire_url,
-                $google_map, $shop_info_true, $shop_info, $sp_before, $pc_before, $sp_period, $pc_period,$contest
+                $google_map, $shop_info_true, $shop_info, $sp_before, $pc_before, $sp_period, $pc_period, $contest,
+                $questionnaire_present, $web_url_true, $web_url, $web_banner
             ]
         ];
 
@@ -312,6 +324,11 @@
                 </dl>
 
                 <dl>
+                    <dt>アンケートプレゼント</dt>
+                    <dd><input type="text" name="questionnaire_present" placeholder="アンケートプレゼント" value="<?=$questionnaire_present_check = !empty($val[38]) ? $val[38] : '';?>"></dd>
+                </dl>
+
+                <dl>
                     <dt>GoogleMap</dt>
                     <dd><input type="text" name="google_map" placeholder="GoogleMap" value='<?=$val[30]?>'></dd>
                 </dl>
@@ -403,6 +420,41 @@
                         <div class="imgPreview">
                             <?php if (!empty($val[37])): ?> 
                                 <img src="/storage/<?=$val[0];?>/<?=$val[37];?>" alt="">
+                            <?php else: ?>
+                                画像がアップロードされていません
+                            <?php endif; ?>
+                        </div>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>ちょい飲みWEBの表示可否</dt>
+                    <dd>
+                        <?php if (!empty($val[39])): ?>   
+                            <input type="radio" name="web_url_true" id="web_url_true" value="true" <?=$web_url_true_check = $val[39] == 'TRUE' ? 'checked' : '';?>>
+                            <label for="web_url_true">あり</label>
+                            <input type="radio" name="web_url_true" id="web_url_false" value="false" <?=$web_url_true_check = $val[39] == 'FALSE' ? 'checked' : '';?>>
+                            <label for="web_url_false">なし</label>
+                        <?php else: ?>
+                            <input type="radio" name="web_url_true" id="web_url_true" value="true">
+                            <label for="web_url_true">あり</label>
+                            <input type="radio" name="web_url_true" id="web_url_false" value="false">
+                            <label for="web_url_false">なし</label>
+                        <?php endif; ?>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>ちょい飲みWEBのURL</dt>
+                    <dd><input type="text" name="web_url" placeholder="ちょい飲みWEBのURL" value="<?=$web_url_check = !empty($val[40]) ? $val[40] : '';?>"></dd>
+                </dl>
+                <dl>
+                    <dt>ちょい飲みWEB画像</dt>
+                    <dd>
+                        <input type="file" name="web_banner">
+                        <input type="hidden" name="re_web_banner" value="<?=$re_web_banner_check = !empty($val[41]) ? $val[41] : '';?>">
+                        <div class="imgPreview">
+                            <?php if (!empty($val[41])): ?> 
+                                <img src="/storage/<?=$val[0];?>/<?=$val[41];?>" alt="">
                             <?php else: ?>
                                 画像がアップロードされていません
                             <?php endif; ?>

@@ -110,3 +110,59 @@ ul.bread {
         width: 330px;
     }
 }
+
+// Webへの導入
+.acd-check {
+    display: none;
+}
+.acd-label {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+    width: 216px;
+    background: #D25A46;
+    color: #fff;
+    padding: 16px;
+    position: relative;
+}
+.acd-label:after {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: rotate(-45deg);
+}
+.acd-content {
+    display: block;
+    width: 216px;
+    margin: 0 auto;
+    height: 0;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+    a {
+        display: block;
+        font-size: 13px;
+        color: #D25A46;
+        text-decoration: none;
+        padding: 16px 24px;
+        border: 1px solid #D25A46;
+    }
+}
+.acd-check:checked + .acd-label + .acd-content {
+    opacity: 1;
+    visibility: visible;
+    margin: 0 auto 48px;
+}
+.acd-check:checked + .acd-label:after {
+    top: 0;
+    transform: rotate(135deg);
+}

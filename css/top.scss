@@ -1,5 +1,8 @@
 .top {
     margin: 80px 0 0 0;
+    .newline {
+        display: none;
+    }
     .hero {
         margin: 0 0 40px 0;
         .title {
@@ -52,6 +55,46 @@
         }
         .rightAbout {
             display: none;
+        }
+    }
+    .webMagagine {
+        margin: 0 auto 40px;
+        background: #F7F8F2;
+        .innerWebMagagine {
+            width: calc(100% - 80px);
+            margin: 0 auto;
+            padding: 48px 0;
+            h3 {
+                text-align: center;
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 0 0 24px 0;
+            }
+            .items {
+                margin: 0 0 24px 0;
+                .item {
+                    margin: 0 0 32px 0;
+                    .webImage {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 0 20px 0;
+                    }
+                    h4 {
+                        text-align: center;
+                        line-height: 1;
+                        margin: 0 0 12px 0;
+                    }
+                    p {
+                        text-align: justify;
+                        font-size: 12px;
+                        line-height: 1.8;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
     .books {
@@ -216,6 +259,20 @@
                 }
             }
         }
+        .webMagagine {
+            .innerWebMagagine {
+                width: 80%;
+                padding: 48px 0;
+                .items {
+                    display: flex;
+                    justify-content: space-between;
+                    .item {
+                        width: 30%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
         .books {
             width: 80%;
             .items {
@@ -240,6 +297,9 @@
         }
     }
     @media screen and (min-width:1024px) {
+        .newline {
+            display: block;
+        }
         margin: 120px 0 0 0;
         .hero {
             .title {
@@ -271,6 +331,34 @@
             }
             .rightAbout {
                 width: 280px;
+            }
+        }
+        .webMagagine {
+            margin: 0 auto 100px;
+            .innerWebMagagine {
+                width: 810px;
+                padding: 100px 0;
+                h3 {
+                    font-size: 24px;
+                    margin: 0 0 56px 0;
+                }
+                .items {
+                    margin: 0 0 56px 0;
+                    .item {
+                        width: 252px;
+                        .webImage {
+                            margin: 0 0 27px 0;
+                        }
+                        h4 {
+                            font-size: 20px;
+                            margin: 0 0 18px 0;
+                        }
+                        p {
+                            text-align: center;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+                }
             }
         }
         .books {

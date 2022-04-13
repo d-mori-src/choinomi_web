@@ -2,6 +2,10 @@
   margin: 80px 0 0 0;
 }
 
+.top .newline {
+  display: none;
+}
+
 .top .hero {
   margin: 0 0 40px 0;
 }
@@ -64,6 +68,55 @@
 
 .top .about .rightAbout {
   display: none;
+}
+
+.top .webMagagine {
+  margin: 0 auto 40px;
+  background: #F7F8F2;
+}
+
+.top .webMagagine .innerWebMagagine {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.top .webMagagine .innerWebMagagine h3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+}
+
+.top .webMagagine .innerWebMagagine .items {
+  margin: 0 0 24px 0;
+}
+
+.top .webMagagine .innerWebMagagine .items .item {
+  margin: 0 0 32px 0;
+}
+
+.top .webMagagine .innerWebMagagine .items .item .webImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+
+.top .webMagagine .innerWebMagagine .items .item h4 {
+  text-align: center;
+  line-height: 1;
+  margin: 0 0 12px 0;
+}
+
+.top .webMagagine .innerWebMagagine .items .item p {
+  text-align: justify;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.top .webMagagine .innerWebMagagine .items .item:last-child {
+  margin: 0;
 }
 
 .top .books {
@@ -255,6 +308,22 @@
     width: 100%;
     height: auto;
   }
+  .top .webMagagine .innerWebMagagine {
+    width: 80%;
+    padding: 48px 0;
+  }
+  .top .webMagagine .innerWebMagagine .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top .webMagagine .innerWebMagagine .items .item {
+    width: 30%;
+    margin: 0;
+  }
   .top .books {
     width: 80%;
   }
@@ -282,6 +351,9 @@
 @media screen and (min-width: 1024px) {
   .top {
     margin: 120px 0 0 0;
+  }
+  .top .newline {
+    display: block;
   }
   .top .hero .title {
     width: 640px;
@@ -314,6 +386,34 @@
   }
   .top .about .rightAbout {
     width: 280px;
+  }
+  .top .webMagagine {
+    margin: 0 auto 100px;
+  }
+  .top .webMagagine .innerWebMagagine {
+    width: 810px;
+    padding: 100px 0;
+  }
+  .top .webMagagine .innerWebMagagine h3 {
+    font-size: 24px;
+    margin: 0 0 56px 0;
+  }
+  .top .webMagagine .innerWebMagagine .items {
+    margin: 0 0 56px 0;
+  }
+  .top .webMagagine .innerWebMagagine .items .item {
+    width: 252px;
+  }
+  .top .webMagagine .innerWebMagagine .items .item .webImage {
+    margin: 0 0 27px 0;
+  }
+  .top .webMagagine .innerWebMagagine .items .item h4 {
+    font-size: 20px;
+    margin: 0 0 18px 0;
+  }
+  .top .webMagagine .innerWebMagagine .items .item p {
+    text-align: center;
+    letter-spacing: -0.1px;
   }
   .top .books {
     width: 810px;

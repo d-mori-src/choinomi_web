@@ -78,7 +78,7 @@
 			
 			■なぁむ(P77)
 			定休日が「水・日曜」→「日曜」に変更となりました',
-			'web_url_true' => false,
+			'web_url_true' => true,
 			'web_url' => 'https://choinomi.jp/kobe/',
 		],
 

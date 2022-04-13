@@ -36,6 +36,38 @@
             </div>
         </section>
 
+        <section class="webMagagine">
+            <div class="innerWebMagagine">
+                <h2 class="secTitle slidein">
+                    <img src="/img/top/web_title.svg" class="secTitleImage" alt="WEB" width="110" height="91" loading="lazy" />
+                </h2>
+                <h3>新しいちょい飲み<br class="sp" />スタイル、はじまる<br />ちょい飲みセットを紹介する<br class="sp" />WEBマガジン</h3>
+                <ul class="items">
+                    <li class="item">
+                        <img src="/img/top/web1.png" class="webImage" alt="取材記事" width="1008" height="660" loading="lazy" />
+                        <h4>取材記事</h4>
+                        <p>名物料理とお酒のセットを独自の切口で取材。<br class="newline" />“おひとりさま”での利用時に気になる情報も。<br class="newline" />特典ありの記事は読者限定でお得に。</p>
+                    </li>
+                    <li class="item">
+                        <img src="/img/top/web2.png" class="webImage" alt="実食レポ" width="1008" height="660" loading="lazy" />
+                        <h4>実食レポ</h4>
+                        <p>NEWオープンのお店や人気の繁盛店など<br class="newline" />話題のお店を編集部が突撃で取材。<br class="newline" />実食レポート記事でタイムリーにお届け。</p>
+                    </li>
+                    <li class="item">
+                        <img src="/img/top/web3.png" class="webImage" alt="まとめ記事" width="1008" height="660" loading="lazy" />
+                        <h4>まとめ記事</h4>
+                        <p>神戸でおすすめの“ちょい飲み”情報を<br class="newline" />〇選の記事形式でご紹介。</p>
+                    </li>
+                </ul>
+
+                <input id="acd-check1" class="acd-check" type="checkbox">
+                <label class="acd-label" for="acd-check1">今すぐアクセス</label>
+                <div class="acd-content">
+                    <a href="https://choinomi.jp/kobe/" target="_blank" rel="noopener noreferrer">神戸版</a>
+                </div>
+            </div>  
+        </section>
+
         <a id="book" class="anchor"></a>
         <section class="books">
             <h2 class="secTitle slidein">

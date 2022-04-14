@@ -13,7 +13,7 @@
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  background: #1E2C4B;
+  background: #192f60;
   z-index: 1000;
 }
 

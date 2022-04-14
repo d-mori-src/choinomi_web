@@ -36,12 +36,13 @@
             </div>
         </section>
 
+        <a id="webMagagine" class="anchor"></a>
         <section class="webMagagine">
             <div class="innerWebMagagine">
                 <h2 class="secTitle slidein">
                     <img src="/img/top/web_title.svg" class="secTitleImage" alt="WEB" width="110" height="91" loading="lazy" />
                 </h2>
-                <h3>新しいちょい飲み<br class="sp" />スタイル、はじまる<br />ちょい飲みセットを紹介する<br class="sp" />WEBマガジン</h3>
+                <h3>神戸のちょい飲みセットを紹介する<br class="sp" />WEBマガジン</h3>
                 <ul class="items">
                     <li class="item">
                         <img src="/img/top/web1.png" class="webImage" alt="取材記事" width="1008" height="660" loading="lazy" />
@@ -60,11 +61,16 @@
                     </li>
                 </ul>
 
-                <input id="acd-check1" class="acd-check" type="checkbox">
+                <a href="https://choinomi.jp/kobe/" class="webLink" target="_blank" rel="noopener noreferrer">
+                    今すぐアクセス
+                    <img src="/img/common/arrow_wh.svg" alt="">
+                </a>
+
+                <!-- <input id="acd-check1" class="acd-check" type="checkbox">
                 <label class="acd-label" for="acd-check1">今すぐアクセス</label>
                 <div class="acd-content">
                     <a href="https://choinomi.jp/kobe/" target="_blank" rel="noopener noreferrer">神戸版</a>
-                </div>
+                </div> -->
             </div>  
         </section>
 

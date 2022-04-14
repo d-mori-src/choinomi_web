@@ -147,6 +147,29 @@ ul.bread li img {
   }
 }
 
+.webLink {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 auto;
+  width: 240px;
+  background: #D25A46;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.webLink img {
+  width: 6px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+  margin: auto;
+}
+
 .acd-check {
   display: none;
 }

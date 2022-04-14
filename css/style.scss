@@ -111,7 +111,30 @@ ul.bread {
     }
 }
 
-// Webへの導入
+// Webへの導入(1版のみボタン)
+.webLink {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0 auto;
+    width: 240px;
+    background: #D25A46;
+    color: #fff;
+    padding: 20px;
+    position: relative; 
+    img {
+        width: 6px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 16px;
+        margin: auto;
+    }
+}
+
+// Webへの導入(アコーディオン)
 .acd-check {
     display: none;
 }

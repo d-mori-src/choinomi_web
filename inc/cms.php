@@ -139,7 +139,40 @@
     <main class="cms">
         <form action="" method="POST" enctype="multipart/form-data">
             <?php foreach ($res->getValues() as $index => $val):?>
+                <dl>
+                    <dt>ショップ情報の表示可否</dt>
+                    <dd>
+                        <?php if (!empty($val[31])): ?>   
+                            <input type="radio" name="shop_info_true" id="shop_info_true" value="true" <?=$shop_info_true_check = $val[31] == 'TRUE' ? 'checked' : '';?>>
+                            <label for="shop_info_true">あり</label>
+                            <input type="radio" name="shop_info_true" id="shop_info_false" value="false" <?=$shop_info_true_check = $val[31] == 'FALSE' ? 'checked' : '';?>>
+                            <label for="shop_info_false">なし</label>
+                        <?php else: ?>
+                            <input type="radio" name="shop_info_true" id="shop_info_true" value="true">
+                            <label for="shop_info_true">あり</label>
+                            <input type="radio" name="shop_info_true" id="shop_info_false" value="false">
+                            <label for="shop_info_false">なし</label>
+                        <?php endif; ?>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>ショップ情報</dt>
+                    <dd><textarea name="shop_info" placeholder="ショップ情報"><?=$shop_info_check = !empty($val[32]) ? $val[32] : '';?></textarea></dd>
+                </dl>
+                
+                <dl>
+                    <dt>データ更新</dt>
+                    <dd>
+                        <input type="radio" name="publish" id="publish" value="true">
+                        <label for="publish">公開リスト更新</label>
+                        <input type="radio" name="publish" id="private" value="false" checked>
+                        <label for="private">非公開リスト更新</label>
+                    </dd>
+                </dl>
+
                 <input type="hidden" name="key" value="<?=$val[0];?>">
+                <input type="submit" value="データを更新する">
+
 
                 <dl>
                     <dt>号数</dt>
@@ -334,27 +367,6 @@
                 </dl>
 
                 <dl>
-                    <dt>ショップ情報の表示可否</dt>
-                    <dd>
-                        <?php if (!empty($val[31])): ?>   
-                            <input type="radio" name="shop_info_true" id="shop_info_true" value="true" <?=$shop_info_true_check = $val[31] == 'TRUE' ? 'checked' : '';?>>
-                            <label for="shop_info_true">あり</label>
-                            <input type="radio" name="shop_info_true" id="shop_info_false" value="false" <?=$shop_info_true_check = $val[31] == 'FALSE' ? 'checked' : '';?>>
-                            <label for="shop_info_false">なし</label>
-                        <?php else: ?>
-                            <input type="radio" name="shop_info_true" id="shop_info_true" value="true">
-                            <label for="shop_info_true">あり</label>
-                            <input type="radio" name="shop_info_true" id="shop_info_false" value="false">
-                            <label for="shop_info_false">なし</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>ショップ情報</dt>
-                    <dd><textarea name="shop_info" placeholder="ショップ情報"><?=$shop_info_check = !empty($val[32]) ? $val[32] : '';?></textarea></dd>
-                </dl>
-
-                <dl>
                     <dt>発売前告知アイコン【スマホ版】</dt>
                     <dd>
                         <input type="file" name="sp_before">
@@ -461,17 +473,6 @@
                         </div>
                     </dd>
                 </dl>
-                
-                <dl>
-                    <dt>データ更新</dt>
-                    <dd>
-                        <input type="radio" name="publish" id="publish" value="true">
-                        <label for="publish">公開リスト更新</label>
-                        <input type="radio" name="publish" id="private" value="false" checked>
-                        <label for="private">非公開リスト更新</label>
-                    </dd>
-                </dl>
-                <input type="submit" value="データを更新する">
             <?php endforeach; ?>
         </form>
     </main>

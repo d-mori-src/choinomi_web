@@ -146,307 +146,354 @@
     <main class="cms">
         <form action="" method="POST" enctype="multipart/form-data">
             <?php foreach ($res->getValues() as $index => $val):?>
-                <dl>
-                    <dt>号数</dt>
-                    <dd><input type="text" name="vol" placeholder="号数" value="<?=$vol_check = !empty($val[1]) ? $val[1] : '';?>"></dd>
-                </dl>
+                <?php if (isset($_GET['auth_user'])): ?>
+                    <dl>
+                        <dt>号数</dt>
+                        <dd><input type="text" name="vol" placeholder="号数" value="<?=$vol_check = !empty($val[1]) ? $val[1] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>版名</dt>
-                    <dd><input type="text" name="name" placeholder="版名" value="<?=$name_check = !empty($val[3]) ? $val[3] : '';?>"></dd>
-                </dl>
+                    <dl>
+                        <dt>版名</dt>
+                        <dd><input type="text" name="name" placeholder="版名" value="<?=$name_check = !empty($val[3]) ? $val[3] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>表紙</dt>
-                    <dd>
-                        <input type="file" name="cover">
-                        <input type="hidden" name="re_cover" value="<?=$re_cover_check = !empty($val[4]) ? $val[4] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[4])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[4];?>" alt="">
+                    <dl>
+                        <dt>表紙</dt>
+                        <dd>
+                            <input type="file" name="cover">
+                            <input type="hidden" name="re_cover" value="<?=$re_cover_check = !empty($val[4]) ? $val[4] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[4])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[4];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>                       
+                        </dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>都道府県分類</dt>
+                        <dd>
+                            <?php if (!empty($val[6])): ?>   
+                                <input type="radio" name="classification" id="kinki" value="近畿" <?=$class_check = $val[6] == '近畿' ? 'checked' : '';?>>
+                                <label for="kinki">近畿</label>
+                                <input type="radio" name="classification" id="chugoku" value="中国" <?=$class_check = $val[6] == '中国' ? 'checked' : '';?>>
+                                <label for="chugoku">中国</label>
+                                <input type="radio" name="classification" id="kyusyu" value="九州" <?=$class_check = $val[6] == '九州' ? 'checked' : '';?>>
+                                <label for="kyusyu">九州</label>
                             <?php else: ?>
-                                画像がアップロードされていません
+                                <input type="radio" name="classification" id="kinki" value="近畿">
+                                <label for="kinki">近畿</label>
+                                <input type="radio" name="classification" id="chugoku" value="中国">
+                                <label for="chugoku">中国</label>
+                                <input type="radio" name="classification" id="kyusyu" value="九州">
+                                <label for="kyusyu">九州</label>
                             <?php endif; ?>
-                        </div>                       
-                    </dd>
-                </dl>
-                
-                <dl>
-                    <dt>都道府県分類</dt>
-                    <dd>
-                        <?php if (!empty($val[6])): ?>   
-                            <input type="radio" name="classification" id="kinki" value="近畿" <?=$class_check = $val[6] == '近畿' ? 'checked' : '';?>>
-                            <label for="kinki">近畿</label>
-                            <input type="radio" name="classification" id="chugoku" value="中国" <?=$class_check = $val[6] == '中国' ? 'checked' : '';?>>
-                            <label for="chugoku">中国</label>
-                            <input type="radio" name="classification" id="kyusyu" value="九州" <?=$class_check = $val[6] == '九州' ? 'checked' : '';?>>
-                            <label for="kyusyu">九州</label>
-                        <?php else: ?>
-                            <input type="radio" name="classification" id="kinki" value="近畿">
-                            <label for="kinki">近畿</label>
-                            <input type="radio" name="classification" id="chugoku" value="中国">
-                            <label for="chugoku">中国</label>
-                            <input type="radio" name="classification" id="kyusyu" value="九州">
-                            <label for="kyusyu">九州</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
+                        </dd>
+                    </dl>
 
-                <dl>
-                    <dt>エリア名</dt>
-                    <dd><input type="text" name="area" placeholder="エリア名" value="<?=$area_check = !empty($val[7]) ? $val[7] : '';?>"></dd>
-                </dl>
+                    <dl>
+                        <dt>エリア名</dt>
+                        <dd><input type="text" name="area" placeholder="エリア名" value="<?=$area_check = !empty($val[7]) ? $val[7] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>本誌リリース日</dt>
-                    <dd><input type="text" name="book_release" placeholder="本誌リリース日" value="<?=$book_release_check = !empty($val[8]) ? $val[8] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>本誌開始日</dt>
-                    <dd><input type="text" name="book_start" placeholder="本誌開始日" value="<?=$book_start_check = !empty($val[9]) ? $val[9] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>本誌終了日</dt>
-                    <dd><input type="text" name="book_end" placeholder="本誌終了日" value="<?=$book_end_check = !empty($val[10]) ? $val[10] : '';?>"></dd>
-                </dl>
+                    <dl>
+                        <dt>本誌リリース日</dt>
+                        <dd><input type="text" name="book_release" placeholder="本誌リリース日" value="<?=$book_release_check = !empty($val[8]) ? $val[8] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>本誌開始日</dt>
+                        <dd><input type="text" name="book_start" placeholder="本誌開始日" value="<?=$book_start_check = !empty($val[9]) ? $val[9] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>本誌終了日</dt>
+                        <dd><input type="text" name="book_end" placeholder="本誌終了日" value="<?=$book_end_check = !empty($val[10]) ? $val[10] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>価格</dt>
-                    <dd><input type="text" name="plice" placeholder="価格" value="<?=$plice_check = !empty($val[11]) ? $val[11] : '';?>"></dd>
-                </dl>
+                    <dl>
+                        <dt>価格</dt>
+                        <dd><input type="text" name="plice" placeholder="価格" value="<?=$plice_check = !empty($val[11]) ? $val[11] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>販売元URL</dt>
-                    <dd><input type="text" name="purchase_url" placeholder="販売元URL" value="<?=$purchase_url_check = !empty($val[12]) ? $val[12] : '';?>"></dd>
-                </dl>
+                    <dl>
+                        <dt>販売元URL</dt>
+                        <dd><input type="text" name="purchase_url" placeholder="販売元URL" value="<?=$purchase_url_check = !empty($val[12]) ? $val[12] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>本文</dt>
-                    <dd><textarea name="lead" placeholder="本文"><?=$lead_check = !empty($val[13]) ? $val[13] : '';?></textarea></dd>
-                </dl>
+                    <dl>
+                        <dt>本文</dt>
+                        <dd><textarea name="lead" placeholder="本文"><?=$lead_check = !empty($val[13]) ? $val[13] : '';?></textarea></dd>
+                    </dl>
 
-                <dl>
-                    <dt>SNSボタンの表示可否</dt>
-                    <dd>
-                        <?php if (!empty($val[14])): ?>   
-                            <input type="radio" name="sns_true" id="" value="true" <?=$class_check = $val[14] == 'TRUE' ? 'checked' : '';?>>
-                            <label for="">あり</label>
-                            <input type="radio" name="sns_true" id="" value="false" <?=$class_check = $val[14] == 'FALSE' ? 'checked' : '';?>>
-                            <label for="">なし</label>
-                        <?php else: ?>
-                            <input type="radio" name="sns_true" id="sns_true" value="true">
-                            <label for="sns_true">あり</label>
-                            <input type="radio" name="sns_true" id="sns_false" value="false">
-                            <label for="sns_false">なし</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Facebook</dt>
-                    <dd><input type="text" name="fb_url" placeholder="Facebook" value="<?=$fb_url_check = !empty($val[15]) ? $val[15] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>INSTAGRAM</dt>
-                    <dd><input type="text" name="insta_url" placeholder="INSTAGRAM" value="<?=$insta_url_check = !empty($val[16]) ? $val[16] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>Twitter</dt>
-                    <dd><input type="text" name="tw_url" placeholder="Twitter" value="<?=$tw_url_check = !empty($val[17]) ? $val[17] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>LINE</dt>
-                    <dd><input type="text" name="line_url" placeholder="LINE" value="<?=$line_url_check = !empty($val[18]) ? $val[18] : '';?>"></dd>
-                </dl>
-
-                <dl>
-                    <dt>フォトコンテストの表示可否</dt>
-                    <dd>
-                        <?php if (!empty($val[19])): ?>   
-                            <input type="radio" name="contest_true" id="contest_true" value="true" <?=$contest_true_check = $val[19] == 'TRUE' ? 'checked' : '';?>>
-                            <label for="contest_true">あり</label>
-                            <input type="radio" name="contest_true" id="contest_false" value="false" <?=$contest_true_check = $val[19] == 'FALSE' ? 'checked' : '';?>>
-                            <label for="contest_false">なし</label>
-                        <?php else: ?>
-                            <input type="radio" name="contest_true" id="contest_true" value="true">
-                            <label for="contest_true">あり</label>
-                            <input type="radio" name="contest_true" id="contest_false" value="false">
-                            <label for="contest_false">なし</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテストリリース日</dt>
-                    <dd><input type="text" name="contest_release" placeholder="フォトコンテストリリース日" value="<?=$contest_release_check = !empty($val[20]) ? $val[20] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテスト開始日</dt>
-                    <dd><input type="text" name="contest_start" placeholder="フォトコンテスト開始日" value="<?=$contest_start_check = !empty($val[21]) ? $val[21] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテスト終了日</dt>
-                    <dd><input type="text" name="contest_end" placeholder="フォトコンテスト終了日" value="<?=$contest_end_check = !empty($val[22]) ? $val[22] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテスト本文</dt>
-                    <dd><textarea name="contest_lead" placeholder="フォトコンテスト本文"><?=$contest_lead_check = !empty($val[23]) ? $val[23] : '';?></textarea></dd>
-                </dl>
-                <dl>
-                    <dt>フォトコンテスト終了時の本文</dt>
-                    <dd><textarea name="contest_endlead" placeholder="フォトコンテスト終了時の本文"><?=$contest_endlead_check = !empty($val[24]) ? $val[24] : '';?></textarea></dd>
-                </dl>
-
-                <dl>
-                    <dt>アンケートの表示可否</dt>
-                    <dd>
-                        <?php if (!empty($val[25])): ?>   
-                            <input type="radio" name="questionnaire_true" id="questionnaire_true" value="true" <?=$questionnaire_true_check = $val[25] == 'TRUE' ? 'checked' : '';?>>
-                            <label for="questionnaire_true">あり</label>
-                            <input type="radio" name="questionnaire_true" id="questionnaire_false" value="false" <?=$questionnaire_true_check = $val[25] == 'FALSE' ? 'checked' : '';?>>
-                            <label for="questionnaire_false">なし</label>
-                        <?php else: ?>
-                            <input type="radio" name="questionnaire_true" id="questionnaire_true" value="true">
-                            <label for="questionnaire_true">あり</label>
-                            <input type="radio" name="questionnaire_true" id="questionnaire_false" value="false">
-                            <label for="questionnaire_false">なし</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>アンケートプレゼント数</dt>
-                    <dd><input type="text" name="questionnaire_number" placeholder="アンケートプレゼント数" value="<?=$questionnaire_number_check = !empty($val[26]) ? $val[26] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>アンケート開始日</dt>
-                    <dd><input type="text" name="questionnaire_start" placeholder="アンケート開始日" value="<?=$questionnaire_start_check = !empty($val[27]) ? $val[27] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>アンケート終了日</dt>
-                    <dd><input type="text" name="questionnaire_end" placeholder="アンケート終了日" value="<?=$questionnaire_end_check = !empty($val[28]) ? $val[28] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>アンケートURL</dt>
-                    <dd><input type="text" name="questionnaire_url" placeholder="アンケートURL" value="<?=$questionnaire_url_check = !empty($val[29]) ? $val[29] : '';?>"></dd>
-                </dl>
-
-                <dl>
-                    <dt>アンケートプレゼント</dt>
-                    <dd><input type="text" name="questionnaire_present" placeholder="アンケートプレゼント" value="<?=$questionnaire_present_check = !empty($val[38]) ? $val[38] : '';?>"></dd>
-                </dl>
-
-                <dl>
-                    <dt>GoogleMap</dt>
-                    <dd><input type="text" name="google_map" placeholder="GoogleMap" value='<?=$val[30]?>'></dd>
-                </dl>
-
-                <dl>
-                    <dt>発売前告知アイコン【スマホ版】</dt>
-                    <dd>
-                        <input type="file" name="sp_before">
-                        <input type="hidden" name="re_sp_before" value="<?=$re_sp_before_check = !empty($val[33]) ? $val[33] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[33])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[33];?>" alt="">
+                    <dl>
+                        <dt>SNSボタンの表示可否</dt>
+                        <dd>
+                            <?php if (!empty($val[14])): ?>   
+                                <input type="radio" name="sns_true" id="" value="true" <?=$class_check = $val[14] == 'TRUE' ? 'checked' : '';?>>
+                                <label for="">あり</label>
+                                <input type="radio" name="sns_true" id="" value="false" <?=$class_check = $val[14] == 'FALSE' ? 'checked' : '';?>>
+                                <label for="">なし</label>
                             <?php else: ?>
-                                画像がアップロードされていません
+                                <input type="radio" name="sns_true" id="sns_true" value="true">
+                                <label for="sns_true">あり</label>
+                                <input type="radio" name="sns_true" id="sns_false" value="false">
+                                <label for="sns_false">なし</label>
                             <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>発売前告知アイコン【PC版】</dt>
-                    <dd>
-                        <input type="file" name="pc_before">
-                        <input type="hidden" name="re_pc_before" value="<?=$re_pc_before_check = !empty($val[34]) ? $val[34] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[34])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[34];?>" alt="">
-                            <?php else: ?>
-                                画像がアップロードされていません
-                            <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
-                
-                <dl>
-                    <dt>発売中告知アイコン【スマホ版】</dt>
-                    <dd>
-                        <input type="file" name="sp_period">
-                        <input type="hidden" name="re_sp_period" value="<?=$re_sp_period_check = !empty($val[35]) ? $val[35] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[35])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[35];?>" alt="">
-                            <?php else: ?>
-                                画像がアップロードされていません
-                            <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>発売中告知アイコン【PC版】</dt>
-                    <dd>
-                        <input type="file" name="pc_period">
-                        <input type="hidden" name="re_pc_period" value="<?=$re_pc_period_check = !empty($val[36]) ? $val[36] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[36])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[36];?>" alt="">
-                            <?php else: ?>
-                                画像がアップロードされていません
-                            <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Facebook</dt>
+                        <dd><input type="text" name="fb_url" placeholder="Facebook" value="<?=$fb_url_check = !empty($val[15]) ? $val[15] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>INSTAGRAM</dt>
+                        <dd><input type="text" name="insta_url" placeholder="INSTAGRAM" value="<?=$insta_url_check = !empty($val[16]) ? $val[16] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>Twitter</dt>
+                        <dd><input type="text" name="tw_url" placeholder="Twitter" value="<?=$tw_url_check = !empty($val[17]) ? $val[17] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>LINE</dt>
+                        <dd><input type="text" name="line_url" placeholder="LINE" value="<?=$line_url_check = !empty($val[18]) ? $val[18] : '';?>"></dd>
+                    </dl>
 
-                <dl>
-                    <dt>フォトコンテスト画像</dt>
-                    <dd>
-                        <input type="file" name="contest">
-                        <input type="hidden" name="re_contest" value="<?=$re_contest_check = !empty($val[37]) ? $val[37] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[37])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[37];?>" alt="">
+                    <dl>
+                        <dt>フォトコンテストの表示可否</dt>
+                        <dd>
+                            <?php if (!empty($val[19])): ?>   
+                                <input type="radio" name="contest_true" id="contest_true" value="true" <?=$contest_true_check = $val[19] == 'TRUE' ? 'checked' : '';?>>
+                                <label for="contest_true">あり</label>
+                                <input type="radio" name="contest_true" id="contest_false" value="false" <?=$contest_true_check = $val[19] == 'FALSE' ? 'checked' : '';?>>
+                                <label for="contest_false">なし</label>
                             <?php else: ?>
-                                画像がアップロードされていません
+                                <input type="radio" name="contest_true" id="contest_true" value="true">
+                                <label for="contest_true">あり</label>
+                                <input type="radio" name="contest_true" id="contest_false" value="false">
+                                <label for="contest_false">なし</label>
                             <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>フォトコンテストリリース日</dt>
+                        <dd><input type="text" name="contest_release" placeholder="フォトコンテストリリース日" value="<?=$contest_release_check = !empty($val[20]) ? $val[20] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>フォトコンテスト開始日</dt>
+                        <dd><input type="text" name="contest_start" placeholder="フォトコンテスト開始日" value="<?=$contest_start_check = !empty($val[21]) ? $val[21] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>フォトコンテスト終了日</dt>
+                        <dd><input type="text" name="contest_end" placeholder="フォトコンテスト終了日" value="<?=$contest_end_check = !empty($val[22]) ? $val[22] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>フォトコンテスト本文</dt>
+                        <dd><textarea name="contest_lead" placeholder="フォトコンテスト本文"><?=$contest_lead_check = !empty($val[23]) ? $val[23] : '';?></textarea></dd>
+                    </dl>
+                    <dl>
+                        <dt>フォトコンテスト終了時の本文</dt>
+                        <dd><textarea name="contest_endlead" placeholder="フォトコンテスト終了時の本文"><?=$contest_endlead_check = !empty($val[24]) ? $val[24] : '';?></textarea></dd>
+                    </dl>
 
-                <dl>
-                    <dt>ちょい飲みWEBの表示可否</dt>
-                    <dd>
-                        <?php if (!empty($val[39])): ?>   
-                            <input type="radio" name="web_url_true" id="web_url_true" value="true" <?=$web_url_true_check = $val[39] == 'TRUE' ? 'checked' : '';?>>
-                            <label for="web_url_true">あり</label>
-                            <input type="radio" name="web_url_true" id="web_url_false" value="false" <?=$web_url_true_check = $val[39] == 'FALSE' ? 'checked' : '';?>>
-                            <label for="web_url_false">なし</label>
-                        <?php else: ?>
-                            <input type="radio" name="web_url_true" id="web_url_true" value="true">
-                            <label for="web_url_true">あり</label>
-                            <input type="radio" name="web_url_true" id="web_url_false" value="false">
-                            <label for="web_url_false">なし</label>
-                        <?php endif; ?>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>ちょい飲みWEBのURL</dt>
-                    <dd><input type="text" name="web_url" placeholder="ちょい飲みWEBのURL" value="<?=$web_url_check = !empty($val[40]) ? $val[40] : '';?>"></dd>
-                </dl>
-                <dl>
-                    <dt>ちょい飲みWEB画像</dt>
-                    <dd>
-                        <input type="file" name="web_banner">
-                        <input type="hidden" name="re_web_banner" value="<?=$re_web_banner_check = !empty($val[41]) ? $val[41] : '';?>">
-                        <div class="imgPreview">
-                            <?php if (!empty($val[41])): ?> 
-                                <img src="/storage/<?=$val[0];?>/<?=$val[41];?>" alt="">
+                    <dl>
+                        <dt>アンケートの表示可否</dt>
+                        <dd>
+                            <?php if (!empty($val[25])): ?>   
+                                <input type="radio" name="questionnaire_true" id="questionnaire_true" value="true" <?=$questionnaire_true_check = $val[25] == 'TRUE' ? 'checked' : '';?>>
+                                <label for="questionnaire_true">あり</label>
+                                <input type="radio" name="questionnaire_true" id="questionnaire_false" value="false" <?=$questionnaire_true_check = $val[25] == 'FALSE' ? 'checked' : '';?>>
+                                <label for="questionnaire_false">なし</label>
                             <?php else: ?>
-                                画像がアップロードされていません
+                                <input type="radio" name="questionnaire_true" id="questionnaire_true" value="true">
+                                <label for="questionnaire_true">あり</label>
+                                <input type="radio" name="questionnaire_true" id="questionnaire_false" value="false">
+                                <label for="questionnaire_false">なし</label>
                             <?php endif; ?>
-                        </div>
-                    </dd>
-                </dl>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>アンケートプレゼント数</dt>
+                        <dd><input type="text" name="questionnaire_number" placeholder="アンケートプレゼント数" value="<?=$questionnaire_number_check = !empty($val[26]) ? $val[26] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>アンケート開始日</dt>
+                        <dd><input type="text" name="questionnaire_start" placeholder="アンケート開始日" value="<?=$questionnaire_start_check = !empty($val[27]) ? $val[27] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>アンケート終了日</dt>
+                        <dd><input type="text" name="questionnaire_end" placeholder="アンケート終了日" value="<?=$questionnaire_end_check = !empty($val[28]) ? $val[28] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>アンケートURL</dt>
+                        <dd><input type="text" name="questionnaire_url" placeholder="アンケートURL" value="<?=$questionnaire_url_check = !empty($val[29]) ? $val[29] : '';?>"></dd>
+                    </dl>
 
-                
+                    <dl>
+                        <dt>アンケートプレゼント</dt>
+                        <dd><input type="text" name="questionnaire_present" placeholder="アンケートプレゼント" value="<?=$questionnaire_present_check = !empty($val[38]) ? $val[38] : '';?>"></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>GoogleMap</dt>
+                        <dd><input type="text" name="google_map" placeholder="GoogleMap" value='<?=$val[30]?>'></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>発売前告知アイコン【スマホ版】</dt>
+                        <dd>
+                            <input type="file" name="sp_before">
+                            <input type="hidden" name="re_sp_before" value="<?=$re_sp_before_check = !empty($val[33]) ? $val[33] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[33])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[33];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>発売前告知アイコン【PC版】</dt>
+                        <dd>
+                            <input type="file" name="pc_before">
+                            <input type="hidden" name="re_pc_before" value="<?=$re_pc_before_check = !empty($val[34]) ? $val[34] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[34])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[34];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>発売中告知アイコン【スマホ版】</dt>
+                        <dd>
+                            <input type="file" name="sp_period">
+                            <input type="hidden" name="re_sp_period" value="<?=$re_sp_period_check = !empty($val[35]) ? $val[35] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[35])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[35];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>発売中告知アイコン【PC版】</dt>
+                        <dd>
+                            <input type="file" name="pc_period">
+                            <input type="hidden" name="re_pc_period" value="<?=$re_pc_period_check = !empty($val[36]) ? $val[36] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[36])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[36];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>フォトコンテスト画像</dt>
+                        <dd>
+                            <input type="file" name="contest">
+                            <input type="hidden" name="re_contest" value="<?=$re_contest_check = !empty($val[37]) ? $val[37] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[37])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[37];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>ちょい飲みWEBの表示可否</dt>
+                        <dd>
+                            <?php if (!empty($val[39])): ?>   
+                                <input type="radio" name="web_url_true" id="web_url_true" value="true" <?=$web_url_true_check = $val[39] == 'TRUE' ? 'checked' : '';?>>
+                                <label for="web_url_true">あり</label>
+                                <input type="radio" name="web_url_true" id="web_url_false" value="false" <?=$web_url_true_check = $val[39] == 'FALSE' ? 'checked' : '';?>>
+                                <label for="web_url_false">なし</label>
+                            <?php else: ?>
+                                <input type="radio" name="web_url_true" id="web_url_true" value="true">
+                                <label for="web_url_true">あり</label>
+                                <input type="radio" name="web_url_true" id="web_url_false" value="false">
+                                <label for="web_url_false">なし</label>
+                            <?php endif; ?>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>ちょい飲みWEBのURL</dt>
+                        <dd><input type="text" name="web_url" placeholder="ちょい飲みWEBのURL" value="<?=$web_url_check = !empty($val[40]) ? $val[40] : '';?>"></dd>
+                    </dl>
+                    <dl>
+                        <dt>ちょい飲みWEB画像</dt>
+                        <dd>
+                            <input type="file" name="web_banner">
+                            <input type="hidden" name="re_web_banner" value="<?=$re_web_banner_check = !empty($val[41]) ? $val[41] : '';?>">
+                            <div class="imgPreview">
+                                <?php if (!empty($val[41])): ?> 
+                                    <img src="/storage/<?=$val[0];?>/<?=$val[41];?>" alt="">
+                                <?php else: ?>
+                                    画像がアップロードされていません
+                                <?php endif; ?>
+                            </div>
+                        </dd>
+                    </dl>
+
+                <?php else: ?>
+                    <input type="hidden" name="vol" placeholder="号数" value="<?=$vol_check = !empty($val[1]) ? $val[1] : '';?>">
+                    <input type="hidden" name="name" placeholder="版名" value="<?=$name_check = !empty($val[3]) ? $val[3] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="cover">
+                    <input type="hidden" name="re_cover" value="<?=$re_cover_check = !empty($val[4]) ? $val[4] : '';?>">
+                    <input type="hidden" name="classification" value="<?=$class_check = !empty($val[6]) ? $val[6] : '';?>">
+                    <input type="hidden" name="area" placeholder="エリア名" value="<?=$area_check = !empty($val[7]) ? $val[7] : '';?>">
+                    <input type="hidden" name="book_release" placeholder="本誌リリース日" value="<?=$book_release_check = !empty($val[8]) ? $val[8] : '';?>">
+                    <input type="hidden" name="book_start" placeholder="本誌開始日" value="<?=$book_start_check = !empty($val[9]) ? $val[9] : '';?>">
+                    <input type="hidden" name="book_end" placeholder="本誌終了日" value="<?=$book_end_check = !empty($val[10]) ? $val[10] : '';?>">
+                    <input type="hidden" name="plice" placeholder="価格" value="<?=$plice_check = !empty($val[11]) ? $val[11] : '';?>">
+                    <input type="hidden" name="purchase_url" placeholder="販売元URL" value="<?=$purchase_url_check = !empty($val[12]) ? $val[12] : '';?>">
+                    <textarea style="visibility:hidden;width:0;height:0;" name="lead" placeholder="本文"><?=$lead_check = !empty($val[13]) ? $val[13] : '';?></textarea>
+                    <input type="hidden" name="sns_true" value="<?=$class_check = !empty($val[14]) ? $val[14] : '';?>">
+                    <input type="hidden" name="fb_url" placeholder="Facebook" value="<?=$fb_url_check = !empty($val[15]) ? $val[15] : '';?>">
+                    <input type="hidden" name="insta_url" placeholder="INSTAGRAM" value="<?=$insta_url_check = !empty($val[16]) ? $val[16] : '';?>">
+                    <input type="hidden" name="tw_url" placeholder="Twitter" value="<?=$tw_url_check = !empty($val[17]) ? $val[17] : '';?>">
+                    <input type="hidden" name="line_url" placeholder="LINE" value="<?=$line_url_check = !empty($val[18]) ? $val[18] : '';?>">
+                    <input type="hidden" name="contest_true" value="<?=$contest_true_check = !empty($val[19]) ? $val[19] : '';?>">
+                    <input type="hidden" name="contest_release" placeholder="フォトコンテストリリース日" value="<?=$contest_release_check = !empty($val[20]) ? $val[20] : '';?>">
+                    <input type="hidden" name="contest_start" placeholder="フォトコンテスト開始日" value="<?=$contest_start_check = !empty($val[21]) ? $val[21] : '';?>">
+                    <input type="hidden" name="contest_end" placeholder="フォトコンテスト終了日" value="<?=$contest_end_check = !empty($val[22]) ? $val[22] : '';?>">
+                    <textarea style="visibility:hidden;width:0;height:0;" name="contest_lead" placeholder="フォトコンテスト本文"><?=$contest_lead_check = !empty($val[23]) ? $val[23] : '';?></textarea>
+                    <textarea style="visibility:hidden;width:0;height:0;" name="contest_endlead" placeholder="フォトコンテスト終了時の本文"><?=$contest_endlead_check = !empty($val[24]) ? $val[24] : '';?></textarea>
+                    <input type="hidden" name="questionnaire_true" value="<?=$questionnaire_true_check = !empty($val[25]) ? $val[25] : '';?>">
+                    <input type="hidden" name="questionnaire_number" placeholder="アンケートプレゼント数" value="<?=$questionnaire_number_check = !empty($val[26]) ? $val[26] : '';?>">
+                    <input type="hidden" name="questionnaire_start" placeholder="アンケート開始日" value="<?=$questionnaire_start_check = !empty($val[27]) ? $val[27] : '';?>">
+                    <input type="hidden" name="questionnaire_end" placeholder="アンケート終了日" value="<?=$questionnaire_end_check = !empty($val[28]) ? $val[28] : '';?>">
+                    <input type="hidden" name="questionnaire_url" placeholder="アンケートURL" value="<?=$questionnaire_url_check = !empty($val[29]) ? $val[29] : '';?>">
+                    <input type="hidden" name="questionnaire_present" placeholder="アンケートプレゼント" value="<?=$questionnaire_present_check = !empty($val[38]) ? $val[38] : '';?>">
+                    <input type="hidden" name="google_map" placeholder="GoogleMap" value='<?=$val[30]?>'>
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="sp_before">
+                    <input type="hidden" name="re_sp_before" value="<?=$re_sp_before_check = !empty($val[33]) ? $val[33] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="pc_before">
+                    <input type="hidden" name="re_pc_before" value="<?=$re_pc_before_check = !empty($val[34]) ? $val[34] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="sp_period">
+                    <input type="hidden" name="re_sp_period" value="<?=$re_sp_period_check = !empty($val[35]) ? $val[35] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="pc_period">
+                    <input type="hidden" name="re_pc_period" value="<?=$re_pc_period_check = !empty($val[36]) ? $val[36] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="contest">
+                    <input type="hidden" name="re_contest" value="<?=$re_contest_check = !empty($val[37]) ? $val[37] : '';?>">
+                    <input type="hidden" name="web_url_true" value="<?=$web_url_true_check = !empty($val[39]) ? $val[39] : '';?>">
+                    <input type="hidden" name="web_url" placeholder="ちょい飲みWEBのURL" value="<?=$web_url_check = !empty($val[40]) ? $val[40] : '';?>">
+                    <input style="visibility:hidden;width:0;height:0;" type="file" name="web_banner">
+                    <input type="hidden" name="re_web_banner" value="<?=$re_web_banner_check = !empty($val[41]) ? $val[41] : '';?>">
+                <?php endif; ?>
+
                 <dl>
                     <dt>ショップ情報の表示可否</dt>
                     <dd>
@@ -467,9 +514,17 @@
                     <dt>ショップ情報</dt>
                     <dd><textarea name="shop_info" placeholder="ショップ情報"><?=$shop_info_check = !empty($val[32]) ? $val[32] : '';?></textarea></dd>
                 </dl>
+
+                <ul class="explanation">
+                    <li>更新手順</li>
+                    <li>1. 上記、編集後「非公開リスト更新」の状態で「データを更新する」ボタンをクリック</li>
+                    <li>2. 編集内容が書き換わってるいるか必ず確認</li>
+                    <li>以下、公開作業</li>
+                    <li>3. 公開リスト更新を選択</li>
+                    <li>4. その後「データを更新する」ボタンをクリック</li>
+                </ul>
                 
                 <dl>
-                    <dt style="color:red;">(注) 非公開リストを更新後、公開リストを更新してください</dt>
                     <dd>
                         <input type="radio" name="publish" id="private" value="false" checked>
                         <label for="private">非公開リスト更新</label>

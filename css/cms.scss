@@ -44,6 +44,31 @@
             border: none;
             background: #B9222A;
         }
+
+        .explanation {
+            margin: 40px 0;
+            padding: 40px 56px;
+            border-radius: 8px;
+            border: 2px solid #f5b4b7;
+            background: #fff;
+            li {
+                font-size: 14px;
+                line-height: 1.5;
+                margin: 0 0 8px 0;
+                &:first-child {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                &:nth-child(3) {
+                    margin: 0 0 32px 0;
+                }
+                &:nth-child(4) {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #B9222A;
+                }
+            }
+        }
     }
 
     

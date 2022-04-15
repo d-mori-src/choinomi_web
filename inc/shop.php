@@ -159,7 +159,7 @@
             <?php if ($shop['questionnaire_start'] <= $today && $today <= $shop['questionnaire_end']): ?>
                 <div class="questionnaire">
                     <h2><img src="/img/shop/questionnaire_title.svg" class="secTitleImage" alt="読者アンケート" width="" height="" loading="lazy" /></h2>
-                    <h4>アンケート対象<br class="sp" /><?=$shop['questionnaire_present']?></h4>
+                    <h4>アンケート対象<br class="sp" /> ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?></h4>
                     <strong>
                         アンケートにお答えいただいた方の中から抽選で<?=$shop['questionnaire_number']?>名様に「<?=$shop['questionnaire_present']?>」をプレゼント!!<br />
                         この度は『ちょい飲み手帖 <?=$shop['name']?>版 vol.<?=$shop['vol']?>』をご購入・ご利用いただき、誠にありがとうございます。今後の改善や継続の為、実際に利用してみた感想やご意見を是非お聞かせください。

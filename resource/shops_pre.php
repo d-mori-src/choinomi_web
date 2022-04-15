@@ -58,7 +58,7 @@
 			',
 			'questionnaire_true' => true,
 			'questionnaire_number' => '5',
-			'questionnaire_present' => 'ちょい飲み手帖 神戸版 vol.17',
+			'questionnaire_present' => '500円分の図書券',
 			'questionnaire_start' => '2022-04-07 00:00:00',
 			'questionnaire_end' => '2022-08-31 00:00:00',
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/72/',

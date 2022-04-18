@@ -104,6 +104,7 @@
             $web_banner = $_POST['re_web_banner'];
         }
 
+        // 公開 or 非公開シート書き込み
         if ($publish == 'true') {
             $sheet_name = 'publish';
         } else {
@@ -114,10 +115,28 @@
         if ($key == 'kobe_books') {
             $sheet_range = 'A2:AZ2';
         }
-        // if ($key == 'himeji') {
-        //     $sheet_range = 'A3:AZ3';
-        // }
-
+        if ($key == 'himeji') {
+            $sheet_range = 'A3:AZ3';
+        }
+        if ($key == 'osaka') {
+            $sheet_range = 'A4:AZ4';
+        }
+        if ($key == 'osaka_kita') {
+            $sheet_range = 'A5:AZ5';
+        }
+        if ($key == 'osaka_minami') {
+            $sheet_range = 'A6:AZ6';
+        }
+        if ($key == 'kyoto') {
+            $sheet_range = 'A7:AZ7';
+        }
+        if ($key == 'okayama') {
+            $sheet_range = 'A8:AZ8';
+        }
+        if ($key == 'fukuoka') {
+            $sheet_range = 'A9:AZ9';
+        }
+        
         $values = [
             [
                 $key, $vol, $publish, $name, $cover, $key, $classification, $area, 

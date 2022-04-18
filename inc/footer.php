@@ -1,6 +1,3 @@
-<?php
-    include_once(ROOT.'resource/shops.php');
-?>
         <footer>
             <section class="trademark">
                 <p>「ちょい飲み手帖」は株式会社SRCパートナーズにより商標登録済みです。</p>
@@ -11,13 +8,6 @@
                     <li><a href="/franchise/">ちょい飲み手帖とは</a></li>
                     <li><a href="https://choinomi.jp/kobe/" target="_blank" rel="noopener noreferrer">WEBマガジン</a></li>
                     <li><a href="https://choinomi.jp/contact/">お問い合わせ</a></li>
-                </ul>
-                <ul>
-                    <?php foreach ($shops as $key =>  $shop): ?>
-                        <?php if ($shop['publish'] === true): ?>
-                            <li><a href="/<?=$key?>/"><?=$shop['name']?>版</a></li>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
                 </ul>
                 <p>
                     株式会社SRCパートナーズ<br />

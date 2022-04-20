@@ -42,7 +42,6 @@
 				
 				■キャンペーン内容
 				写真を投稿してくれた人の中から3名様に「500円分の図書券」をプレゼント!
-				さらに、その投稿写真を「ちょい飲み手帖vol.18」に掲載させて頂きます。
 				
 				■当選について
 				8/26～9/6の間で当選者の方のみにご連絡いたします。
@@ -64,7 +63,9 @@
 			'questionnaire_url' => 'https://ssl.src-japan.net/passport_questionnaire/72/',
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=18C3-GgT6LUEVattOjoaoi7raHayhX3Cx&ehbc=2E312F" width="640" height="480"></iframe>',
 			'shop_info_true' => true,
-			'shop_info' => '',
+			'shop_info' => '■まり屋(P21)
+				4月25日（月）は貸切のため、ちょい飲み手帖の利用はできません
+			',
 			'web_url_true' => true,
 			'web_url' => 'https://choinomi.jp/kobe/',
 		],

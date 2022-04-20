@@ -74,10 +74,11 @@
 			'google_map' => '<iframe src="https://www.google.com/maps/d/embed?mid=13DJknhmsGdj5Uh2LWc6lSuo9anfeBLiH&ehbc=2E312F" width="640" height="480"></iframe>',
 			'shop_info_true' => true,
 			'shop_info' => '■ボウルズキッチン(P26)
-			定休日が「日曜」→「不定」に変更となりました
-			
-			■なぁむ(P77)
-			定休日が「水・日曜」→「日曜」に変更となりました',
+				定休日が「日曜」→「不定」に変更となりました
+				
+				■なぁむ(P77)
+				定休日が「水・日曜」→「日曜」に変更となりました
+			',
 			'web_url_true' => true,
 			'web_url' => 'https://choinomi.jp/kobe/',
 		],

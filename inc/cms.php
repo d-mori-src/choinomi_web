@@ -156,7 +156,7 @@
             <script type="text/javascript">
             setTimeout("redirect()", 0);
             function redirect() {
-                location.href="/'.$key.'_dev/cms/";
+                location.href="/'.$key.'/cms/";
             }
             </script>';
         exit;

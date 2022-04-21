@@ -12,6 +12,13 @@
         [
             'news_true' => true,
             'book' => '神戸版',
+            'release_date' => '2022.4.22',
+            'lead' => '「ちょい飲み手帖 神戸版 Vol.17」を2022年4月22日に発売します。',
+            'url' => '/kobe_books/',
+        ],
+        [
+            'news_true' => true,
+            'book' => '神戸版',
             'release_date' => '2021.11.15',
             'lead' => '「ちょい飲み手帖 神戸版 Vol.16」を2021年11月26日に発売します。',
             'url' => '/kobe_books/',

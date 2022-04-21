@@ -1,6 +1,4 @@
 <?php
-    define('ROOT', './');
-
     require ROOT.'vendor/autoload.php';
     $key = ROOT.'key.json';
     $sheet_id = "1h0uNLcQ9DaWGsIsdCijFMphbYcVH_PGTvnGiZHU3vLc";

@@ -2,12 +2,8 @@
     define('ROOT', './');
     include_once(ROOT.'inc/header.php');
     include_once(ROOT.'resource/news.php');
+    include_once(ROOT.'resource/shops.php');
     include_once(ROOT.'controller/AppController.php');
-    include_once(ROOT.'model/shop_list.php');
-
-    $sheet_range = 'A2:AZ9';
-    $sheet_name = 'publish';
-    $res = $sheet->spreadsheets_values->get($sheet_id, $sheet_name.'!'.$sheet_range);
 ?>
     <main class="top">
         <section class="hero">
@@ -86,17 +82,17 @@
 
             <h3 class="slidein">近畿<span>エリア</span></h3>
             <div class="items slidein">
-                <?php foreach ($res->getValues() as $index => $value):?>
-                    <?php if ($value[6] === '近畿' && $value[2] === 'TRUE'): ?>
-                        <a href="/<?=$value[0]?>/" class="item">
-                            <img src="/img/top/<?=$value[1]?>_<?=$value[0]?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$value[3]?>版" width="269" height="452" loading="lazy" />
-                            <p><?=$value[3]?>版 vol.<?=$value[1]?></p>
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '近畿' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
-                            <?php if ($today <= $value[9]): ?>
+                            <?php if ($today <= $shop['book_start']): ?>
                                 <p class="state">販売前</p>
-                            <?php elseif ($value[9] <= $today && $today <= $value[10]): ?>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
                                 <p class="state active">販売中</p>
-                            <?php elseif ($value[8] === '0000-00-00 00:00:00'): ?>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
                                 <p class="state">販売未定</p>
                             <?php else: ?>
                                 <p class="state">販売終了</p>
@@ -108,17 +104,17 @@
 
             <h3 class="slidein">中国<span>エリア</span></h3>
             <div class="items slidein">
-                <?php foreach ($res->getValues() as $index => $value):?>
-                    <?php if ($value[6] === '中国' && $value[2] === 'TRUE'): ?>
-                        <a href="/<?=$value[0]?>/" class="item">
-                            <img src="/img/top/<?=$value[1]?>_<?=$value[0]?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$value[3]?>版" width="269" height="452" loading="lazy" />
-                            <p><?=$value[3]?>版 vol.<?=$value[1]?></p>
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '中国' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
-                            <?php if ($today <= $value[9]): ?>
+                            <?php if ($today <= $shop['book_start']): ?>
                                 <p class="state">販売前</p>
-                            <?php elseif ($value[9] <= $today && $today <= $value[10]): ?>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
                                 <p class="state active">販売中</p>
-                            <?php elseif ($value[8] === '0000-00-00 00:00:00'): ?>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
                                 <p class="state">販売未定</p>
                             <?php else: ?>
                                 <p class="state">販売終了</p>
@@ -130,17 +126,17 @@
 
             <h3 class="slidein">九州<span>エリア</span></h3>
             <div class="items slidein">
-                <?php foreach ($res->getValues() as $index => $value):?>
-                    <?php if ($value[6] === '九州' && $value[2] === 'TRUE'): ?>
-                        <a href="/<?=$value[0]?>/" class="item">
-                            <img src="/img/top/<?=$value[1]?>_<?=$value[0]?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$value[3]?>版" width="269" height="452" loading="lazy" />
-                            <p><?=$value[3]?>版 vol.<?=$value[1]?></p>
+                <?php foreach ($shops as $key =>  $shop): ?>
+                    <?php if ($shop['classification'] === '九州' && $shop['publish'] === true): ?>
+                        <a href="/<?=$key;?>/" class="item">
+                            <img src="/img/top/<?=$shop['vol'];?>_<?=$key;?>_cover.jpg" class="bookImage" alt="ちょい飲み手帖 <?=$shop['name'];?>版" width="269" height="452" loading="lazy" />
+                            <p><?=$shop['name'];?>版 vol.<?=$shop['vol'];?></p>
                             
-                            <?php if ($today <= $value[9]): ?>
+                            <?php if ($today <= $shop['book_start']): ?>
                                 <p class="state">販売前</p>
-                            <?php elseif ($value[9] <= $today && $today <= $value[10]): ?>
+                            <?php elseif ($shop['book_start'] <= $today && $today <= $shop['book_end']): ?>
                                 <p class="state active">販売中</p>
-                            <?php elseif ($value[8] === '0000-00-00 00:00:00'): ?>
+                            <?php elseif ($shop['book_release'] === '0000-00-00 00:00:00'): ?>
                                 <p class="state">販売未定</p>
                             <?php else: ?>
                                 <p class="state">販売終了</p>

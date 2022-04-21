@@ -96,12 +96,14 @@
         <?php endif; ?>
         
         <?php if ($value[25] === 'TRUE'): ?>
-            <a href="#questionnaire" class="questionnaireBanner">
-                <picture>
-                    <source srcset="/img/shop/sp_questionnaire.svg" media="(max-width: 767px)"/>
-                    <img src="/img/shop/pc_questionnaire.svg" class="bannerImage" alt="読者アンケート実施中" width="557" height="118" loading="lazy" />
-                </picture>
-            </a>
+            <?php if ($value[27] <= $today && $today <= $value[28]): ?>
+                <a href="#questionnaire" class="questionnaireBanner">
+                    <picture>
+                        <source srcset="/img/shop/sp_questionnaire.svg" media="(max-width: 767px)"/>
+                        <img src="/img/shop/pc_questionnaire.svg" class="bannerImage" alt="読者アンケート実施中" width="557" height="118" loading="lazy" />
+                    </picture>
+                </a>
+            <?php endif; ?>
         <?php endif; ?>
 
         <div class="lead">

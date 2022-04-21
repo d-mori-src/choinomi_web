@@ -2,7 +2,6 @@
     define('ROOT', './');
     include_once(ROOT.'inc/header.php');
     include_once(ROOT.'resource/news.php');
-    include_once(ROOT.'resource/shops.php');
     include_once(ROOT.'controller/AppController.php');
     include_once(ROOT.'model/shop_list.php');
 

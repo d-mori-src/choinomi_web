@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------
+	contact
+------------------------------------------------------------*/
+.required, .error-message {
+	color: #cc0000;
+}
+
+.form_wrap {
+	padding: 30px 40px 40px;
+	margin-bottom: 30px;
+	border: 1px solid #CCC;
+	background-color: #FFF;
+}
+
+.form_wrap.complete {
+	padding: 30px 40px;
+	margin-bottom: 100px;
+}
+
+.form_wrap h3 {
+	color: #192f60;
+	font-size: 1.6rem;
+	position: relative;
+}
+
+.form_wrap h3 span {
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+	font-size: 1.1rem;
+	font-weight: normal;
+}
+
+.form_wrap table {
+	font-size: 1.2rem;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.form_wrap th, .form_wrap td {
+	padding-bottom: 15px;
+}
+
+.form_wrap th {
+	width: 23%;
+	font-weight: normal;
+	text-align: left;
+}
+
+.form_wrap .separate th, .form_wrap .separate td {
+	border-top: 1px solid #CCC;
+	padding-top: 15px;
+}
+
+.form_wrap.confirm tr:first-child th, .form_wrap.confirm tr:first-child td {
+	border-top: none;
+}
+
+.form_wrap .msg th {
+	vertical-align: top;
+}
+
+.attention_msg {
+	font-size: 1.5rem;
+	color: #cc0000;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border: 1px solid #CC0000;
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 1.3;
+	border-radius: 5px;
+}
+
+/*------------//// input ////------------*/
+.form_wrap input[type=text], .form_wrap textarea, .form_wrap select {
+	padding: 5px 10px;
+	border: 1px solid #CCC;
+	border-radius: 14px;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-border-radius : 14px;
+    -webkit-appearance : none;
+}
+.form_wrap select {
+	/* border-radius: 14px 5px 5px 14px; */
+}
+
+.form_wrap .error input[type=text], .form_wrap .error textarea, .form_wrap .error select {
+	border: 2px solid #f0b7b7;
+	-moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.subject input {
+	vertical-align: -2px;
+}
+
+.subject label {
+	margin: 0 0 0 2px;
+}
+
+.subject label + input {
+	margin-left: 15px;
+}
+
+#ContactTestContactKind2{
+	margin-left: 15px;
+}
+
+#ContactContactKind2 {
+    margin-left: 15px;
+}
+
+.contact_method {
+	vertical-align: -2px;
+}
+
+.company input {
+	width: 320px;
+}
+
+.personal input {
+	width: 200px;
+}
+
+input#ContactZip {
+	position: relative;
+	width: 9rem;
+}
+
+.form_wrap textarea {
+	width: 430px;
+	height: 140px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.entrybtn {
+	width: 100%;
+	text-align: center;
+}
+
+.entrybtn input[type=button] {
+	width: 210px;
+	line-height: 28px;
+	background-color: #192f60;
+	color: #FFF;
+	border: none;
+	border-radius: 14px;
+	cursor: pointer;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+	font-family: 'メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+
+
+/*------------//// tel_info ////------------*/
+.tel_info {
+	padding: 20px 35px;
+	border: 1px solid #CCC;
+	background-color: #FFF;
+	margin-bottom: 150px;
+}
+
+.tel_info h3 {
+	color: #192f60;
+	font-size: 1.6rem;
+	margin: 0 0 23px;
+}
+
+.tel_info p.name {
+	font-size: 1.8rem;
+}
+
+.tel_info p.time {
+	font-size: 1.2rem;
+	margin-bottom: 5px;
+}
+
+.tel_info p.tel {
+	font-size: 2.8rem;
+}
+
+/*------------//// comfirm ////------------*/
+.confirmText {
+	font-size: 1.5rem;
+	color: #192f60;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border: 1px solid #192f60;
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 1.3;
+	border-radius: 5px;
+}
+
+.form_wrap.confirm .separate th, .form_wrap.confirm .separate td {
+	border-top: 1px dotted #CCC;
+}
+
+.form_wrap.confirm .pc {
+	display: table-row;
+}
+
+.form_wrap.confirm th, .form_wrap.confirm td {
+	padding: 8px 0;
+}
+
+.form_wrap.confirm th {
+	width: 18%;
+	font-weight: bold;
+}
+
+.button_area {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.button_area input[type=submit] {
+	line-height: 28px;
+	color: #FFF;
+	border: none;
+	border-radius: 14px;
+	cursor: pointer;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+	font-family: 'メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.button_area input[type=submit].confirm {
+	width: 250px;
+	background-color: #192f60;
+}
+
+.button_area input[type=submit].back {
+	width: 150px;
+	background-color: #888;
+	margin-right: 10px;
+}
+
+/*------------//// complete ////------------*/
+.completeText {
+	font-size: 1.5rem;
+	color: #192f60;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 1.3;
+}
+
+/*------------------------------------------------------------
+	smartphone
+------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	/*------------//// contact ////------------*/
+	.form_wrap {
+		padding: 10px 20px 30px;
+	}
+
+	.form_wrap h3 {
+		font-size: 1.5rem;
+	}
+
+	.form_wrap h3 span {
+		font-size: 12px;
+	}
+
+	.form_wrap td, .form_wrap th {
+		display: block;
+		width: 100%;
+	}
+
+	.form_wrap th {
+		padding-bottom: 1px;
+		font-weight: bold;
+	}
+
+	.form_wrap td {
+		padding-bottom: 10px;
+	}
+
+	.form_wrap .separate th {
+		padding-top: 10px;
+	}
+
+	.form_wrap .separate td {
+		padding-top: 1px;
+		border-top: none;
+	}
+
+	/*------ input ------*/
+	.form_wrap input, .form_wrap textarea {
+		box-sizing: border-box;
+	}
+
+	.company input, .personal input, .form_wrap textarea {
+		width: 100%;
+	}
+
+	textarea {
+		border-radius: 5px;
+	}
+
+	.entrybtn input[type=button] {
+		width: 90%;
+		line-height: 50px;
+		border-radius: 10px;
+		max-width: 350px;
+		width: 100%;
+		height: 50px;
+	}
+
+
+	input[type=radio] {
+		display: none;
+	}
+
+	input[type="radio"]:checked + label {
+		background: #192f60;
+		color: #fff;
+	}
+	
+	.subject label {
+		display: block;
+		text-align: center;
+		width: 100%;
+		background: #eee;
+		margin: 0 0 8px 0;
+		padding: 14px;
+		border-radius: 10px;
+	}
+
+	/*------ tel_info ------*/
+	.tel_info {
+		padding: 15px 20px;
+		margin-bottom: 100px;
+	}
+
+	.tel_info h3 {
+		font-size: 1.5rem;
+		margin: 0 0 20px;
+	}
+
+	.tel_info p.name {
+		font-size: 1.7rem;
+		line-height: 1.3;
+	}
+
+	.tel_info p.time {
+		margin-top: 5px;
+		font-size: 12px;
+	}
+
+	.tel_info p.tel {
+		font-size: 2.7rem;
+	}
+
+	/*------------//// confirm ////------------*/
+	.form_wrap.confirm th, .form_wrap.confirm td {
+		display: table-cell !important;
+		line-height: 1.2;
+		padding: 8px 0;
+	}
+
+	.form_wrap.confirm th {
+		white-space: nowrap;
+		padding-right: 10px
+	}
+
+	.form_wrap.confirm .separate th, .form_wrap.confirm .separate td {
+		border-top: 1px dotted #CCC;
+	}
+
+	.form_wrap .msg td {
+		padding-top: 0;
+	}
+
+	.button_area input[type=submit] {
+		width: 100%;
+		line-height: 50px;
+		border-radius: 10px;
+		height: 50px;
+	}
+
+	.button_area input[type=submit].confirm {
+		width: 60%;
+		max-width: 300px;
+	}
+
+	.button_area input[type=submit].back {
+		width: 34%;
+		margin-right: 10px;
+		max-width: 150px;
+	}
+
+}
+
+@media screen and (max-width: 460px) {
+	.subject input {
+		margin-left: 0 !important;
+	}
+	.subject label::after {
+		content: '';
+		display: block;
+	}
+}

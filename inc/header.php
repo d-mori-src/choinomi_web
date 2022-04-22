@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="/css/shop_list.css">
     <link rel="stylesheet" href="/css/franchise.css">
     <link rel="stylesheet" href="/css/notfound.css">
+    <link rel="stylesheet" href="/css/cookie.css">
 
     <link rel="stylesheet" href="/css/cms.css">
 

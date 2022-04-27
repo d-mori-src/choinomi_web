@@ -61,15 +61,13 @@
                 .info {
                     margin: 0 0 12px 0;
                     dl {
+                        display: flex;
                         font-size: 12px;
                         line-height: 2;
                         dt {
                             font-weight: bold;
                             width: 90px;
-                            margin: 0 16px 0 0;
-                        }
-                        dd {
-                            margin: 0 0 12px 0;
+                            margin: 0 8px 0 0;
                         }
                     }
                 }
@@ -300,7 +298,6 @@
                     }
                     .info {
                         dl {
-                            display: flex;
                             font-size: 14px;
                             line-height: 1.7;
                             dt {

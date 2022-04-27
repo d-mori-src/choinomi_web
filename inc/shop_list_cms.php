@@ -60,6 +60,12 @@
                             <div class="tdTop">
                                 <div class="page">P.<?=$vals[1];?></div>
                                 <div class="name"><?=$vals[2];?></div>
+
+                                <?php if ($vals[4] == 'NEW'): ?>
+                                    <div class="tag new"><?=$vals[4];?></div>
+                                <?php elseif ($vals[4] == '復活'): ?>
+                                    <div class="tag revival"><?=$vals[4];?></div>
+                                <?php endif; ?>
                             </div>
                             <div class="tdBottom">
                                 <?=$vals[3];?><br />
@@ -80,13 +86,12 @@
                                     <div class="close"><?=$vals[8];?></div>
                                 <?php endif; ?>
                                 <?php if ($vals[9] !== 'なし'): ?>
-                                    <div class="info"><?=nl2br($vals[9]);?></div>
-                                <?php endif; ?>
-
-                                <?php if ($vals[4] == 'NEW'): ?>
-                                    <div class="tag new"><?=$vals[4];?></div>
-                                <?php elseif ($vals[4] == '復活'): ?>
-                                    <div class="tag revival"><?=$vals[4];?></div>
+                                    <div class="info">
+                                        <?php if ($vals[10] !== 'なし'): ?>
+                                            <img src="<?=$vals[10];?>" class="infoImage" alt="お知らせ画像" />
+                                        <?php endif; ?>
+                                        <p class="infoText"><?=nl2br($vals[9]);?></p>
+                                    </div>
                                 <?php endif; ?>
                             </div>
                         </div>

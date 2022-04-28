@@ -19,7 +19,7 @@
         </footer>
     </div>
 
-    <?php include('cookie_popup.php');?>
+    <?php // include('cookie_popup.php');?>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
     <script src="/js/main.js" defer></script>
